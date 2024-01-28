@@ -113,6 +113,35 @@ header {
 
   }
 
+  .aboutmalc {
+    display: flex;
+    border: #ddd 1px solid;
+    margin-left: 5%;
+    margin-right: 5%;
+	justify-content: right;
+    
+  }
+ 
+  .malcom {
+    margin: 2%;
+    width: 15rem;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .malcomtext {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: right;
+  }
+
+  .malcomtext h2{
+    font-size: 3rem;
+    color:  rgb(207, 28, 88);
+  }
+
 @media screen and (max-width: 768px) {
 	nav ul {
 		display: none;
