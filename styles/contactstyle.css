@@ -7,32 +7,34 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-header {
-	background-color: #222;
-	padding: 1rem;
-}
-
 nav {
-	background-color: #222;
-	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
-
-nav ul {
+  
+nav img {
+	height: 5rem;
+	padding: 10px; /* Add padding to the logo */
+}
+  
+#nav-links {
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
 	display: flex;
-	flex-direction: row;
+	align-items: center; /* Align navigation items vertically with the logo */
 }
-
-nav ul li {
-	display: inline-block;
+  
+#nav-links li {
 	margin-right: 1rem;
-}
-
-nav ul li a {
-	color: white;
+  }
+  
+#nav-links li a {
+	color: rgb(0, 0, 0);
 	text-decoration: none;
 	padding: 0.5rem 1rem;
+	font-size: 2rem;
 }
 
 #hamburger-menu {
@@ -43,7 +45,7 @@ nav ul li a {
 #hamburger-menu div {
 	width: 25px;
 	height: 3px;
-	background-color: white;
+	background-color: rgb(0, 0, 0);
 	margin: 4px;
 }
 
@@ -52,16 +54,36 @@ main {
 }
 
 footer {
-	background-color: #222;
+	background-color: #ffffff;
 	padding: 1rem;
 	text-align: center;
 	margin-top: 1rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 header h1{
     color: white;
 }
+
+header {
+	background-color: #ffffff;
+	padding: 1rem;
+	border: 1px solid black;
+  }
+
+  .user-icon img {
+	height: 6rem;
+
+  }
+  
+  .user-icon {
+	position: absolute; 
+	top: 1rem; 
+	right: 2rem; 
+  }
+
+
+
 
 @media screen and (max-width: 768px) {
 	nav ul {
@@ -71,4 +93,8 @@ header h1{
 	#hamburger-menu {
 		display: block;
 	}
+
+	.logotext {
+		flex-direction: column;
+	  }
 }
