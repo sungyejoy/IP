@@ -30,11 +30,11 @@ nav img {
 	margin-right: 1rem;
   }
   
-#nav-links li a {
+  #nav-links li a {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
 	padding: 0.5rem 1rem;
-	font-size: 2rem;
+	font-size: 1.7rem;
 }
 
 #hamburger-menu {
