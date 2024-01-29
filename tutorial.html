@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>OrigaMe!</title>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/tutorialstyle.css">
 </head>
 <body>
 	<header>
@@ -28,10 +28,28 @@
 			</div>
 		</nav>
 	</header>
+	<div class="heading">
+		<div class="title">
+			<h1>Tutorials</h1>
+		</div>
+		<div class="filter">
+		  <button onclick="dropDown()" class="dropbtn">Types of Origami</button>
+		  <div id="filterlist" class="dropdownContent">
+			<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+			<a href="#plant">Plants</a>
+			<a href="#animal">Animals</a>
+			<a href="#deco">Decorative</a>
+			<a href="#wear">Wearables</a>
+			<a href="#other">Others</a>
+		  </div>
+		</div>
+	  </div>
+	
 	
 	<footer>
 		<p>Copyright © 2023 OrigaMe!</p>
 	</footer>
 	<script src="javascript/hamburger.js"></script>
+	<script src="javascript/dropdown.js"></script>
 </body>
 </html>
