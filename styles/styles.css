@@ -103,6 +103,7 @@ header {
 	padding: 30px 10px;
 	font-family: 'DM Sans', sans-serif;
 	transition: background .4s ease-in;
+	flex-direction: column;
 	
 	&.blue {
 	  background-color: #428aa6;
@@ -150,7 +151,7 @@ header {
 	object-fit: cover;
   }
   
-  #item-1:checked ~ .cards #origami-tulip, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #origami-cat{
+  #item-1:checked ~ .cards #origami-tulip, #item-2:checked ~ .cards #origami-crane, #item-3:checked ~ .cards #origami-cat{
 	transform: translatex(-40%) scale(.8);
 	opacity: .4;
 	z-index: 0;
@@ -186,3 +187,5 @@ header {
 		flex-direction: column;
 	  }
 }
+
+/* Footer */
