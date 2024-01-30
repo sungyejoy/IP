@@ -125,7 +125,7 @@
      border: #ddd 1px solid;
      margin-left: 5%;
      margin-right: 5%;
-  justify-content: right;
+    justify-content: right;
      
    }
   
@@ -158,7 +158,7 @@
      border: #ddd 1px solid;
      margin-left: 5%;
      margin-right: 5%;
-  justify-content: left;
+    justify-content: left;
      
    }
   
@@ -205,6 +205,61 @@
      color: white;
      margin: auto;
    }
+
+   .aboutmalc {
+    display: flex;
+    border: #ddd 1px solid;
+    margin-left: 5%;
+    margin-right: 5%;
+   justify-content: right;
+   text-align: right;
+    
+  }
+ 
+  .malcimg {
+    margin: 2%;
+    width: 15rem;
+    flex-direction: column;
+    display: flex;
+  }
+
+
+  .malcom h2{
+    font-size: 3rem;
+    color: #f0307a;
+  }
+  
+  .malcom h3{
+    font-size: 1.5rem;
+    color: #f0307a;  
+  }
+
+  .aboutyeji {
+    display: flex;
+    border: #ddd 1px solid;
+    margin-left: 5%;
+    margin-right: 5%;
+   justify-content: left;
+    
+  }
+ 
+  .yejiimg {
+    margin: 2%;
+    width: 15rem;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .yeji h2{
+    font-size: 3rem;
+    color: #f0307a;
+  }
+
+  .yeji h3{
+    font-size: 1.5rem;
+    color: #f0307a;
+  }
+
  
  
  @media screen and (max-width: 768px) {
