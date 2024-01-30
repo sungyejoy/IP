@@ -86,6 +86,12 @@ header {
 	display: none;
   }
 
+  .container {
+	border: 1px black solid;
+	justify-content: center;
+	text-align: center;
+  }
+
 
 @media screen and (max-width: 768px) {
 	nav ul {
