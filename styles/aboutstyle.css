@@ -1,186 +1,222 @@
+
 * {
-	box-sizing: border-box;
-}
-
-body {
-	margin: 0;
-	font-family: Arial, sans-serif;
-}
-
-nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
+  box-sizing: border-box;
+ }
+ 
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+ }
+ 
+ nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+   
+ nav img {
+  height: 4rem;
+  padding: 10px; /* Add padding to the logo */
+ }
+   
+ #nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Align navigation items vertically with the logo */
+ }
+   
+ #nav-links li {
+  margin-right: 1rem;
+   }
+   
+   #nav-links li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+ }
+ 
+ #hamburger-menu {
+  display: none;
+  cursor: pointer;
+ }
+ 
+ #hamburger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  margin: 4px;
+ }
+ 
+ main {
+  padding: 2rem;
+ }
+ 
+ footer {
+  background-color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+     color: rgb(0, 0, 0);
+ }
+ 
+ header h1{
+     color: white;
+ }
+ 
+ header {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-bottom: 1px solid black;
+   }
+ 
+   .user-icon img {
+  height: 4.5rem;
+ 
+   }
+   
+   .user-icon {
+  position: absolute; 
+  top: 0.5rem; 
+  right: 2rem; 
+   }
+ 
+   .aboutus h1{
+     color: #000000;
+     font-size: 3rem;
+     text-align: center;
+   }
+ 
+ 
+   /* Person specified content box*/
+   .aboutorigame {
+  display: flex;
+  border: #ddd 1px solid;
+  margin-left: 5%;
+  margin-right: 5%;
+   }
+   
+   .origame {
+  margin: 2%;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+   }
+   
+   .logotext {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+   }
+ 
+   
+   .text {
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: left;
+  margin-left: 5%;
+ 
+   }
+ 
+   .aboutgoals {
+     display: flex;
+     border: #ddd 1px solid;
+     margin-left: 5%;
+     margin-right: 5%;
+  justify-content: right;
+     
+   }
   
-nav img {
-	height: 4rem;
-	padding: 10px; /* Add padding to the logo */
-}
+   .goalsimg {
+     margin: 2%;
+     width: 15rem;
+     flex-direction: column;
+     display: flex;
+   }
+   
+   .goals {
+     font-size: 1.5rem;
+     color: #000000;
+     margin-left: 1rem;
+     margin-right: 1rem;
+     text-align: right;
+   }
+ 
+   .goals h2{
+     font-size: 3rem;
+     color: #f0307a;;
+   }
+ 
+   .goals p{
+     padding-right: 2rem;
+   }
+ 
+   .aboutvision {
+     display: flex;
+     border: #ddd 1px solid;
+     margin-left: 5%;
+     margin-right: 5%;
+  justify-content: left;
+     
+   }
   
-#nav-links {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center; /* Align navigation items vertically with the logo */
-}
-  
-#nav-links li {
-	margin-right: 1rem;
+   .visionimg {
+     margin: 2%;
+     width: 15rem;
+     flex-direction: column;
+     display: flex;
+   }
+ 
+   .vision h2{
+     font-size: 3rem;
+     color: #f0307a;
+   }
+   
+   .vision {
+     font-size: 1.5rem;
+     color: #000000;
+     margin-left: 1rem;
+     margin-right: 1rem;
+     text-align: left;
+   }
+ 
+   .vision p{
+     padding-left: 2rem;
+   }
+ 
+   .team{
+     border: 1px black solid;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     padding: 2%;
+   }
+ 
+   .team h1{
+     border: 3px solid darkred;
+     padding: 15px 32px;
+     display: inline-block;
+     justify-content: center;
+     font-size: 3rem;
+     background-color:#f0307a;;
+     text-align: center;
+     color: white;
+     margin: auto;
+   }
+ 
+ 
+ @media screen and (max-width: 768px) {
+  nav ul {
+   display: none;
   }
   
-  #nav-links li a {
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-	margin-left: 1rem;
-	font-size: 1.3rem;
-}
-
-#hamburger-menu {
-	display: none;
-	cursor: pointer;
-}
-
-#hamburger-menu div {
-	width: 25px;
-	height: 3px;
-	background-color: rgb(0, 0, 0);
-	margin: 4px;
-}
-
-main {
-	padding: 2rem;
-}
-
-footer {
-	background-color: #ffffff;
-	padding: 1rem;
-	text-align: center;
-	margin-top: 1rem;
-    color: rgb(0, 0, 0);
-}
-
-header h1{
-    color: white;
-}
-
-header {
-	background-color: #ffffff;
-	padding: 0.5rem;
-	border-bottom: 1px solid black;
+  #hamburger-menu {
+   display: block;
   }
-
-  .user-icon img {
-	height: 4.5rem;
-
-  }
-  
-  .user-icon {
-	position: absolute; 
-	top: 0.5rem; 
-	right: 2rem; 
-  }
-
-
-  /* Person specified content box*/
-  .aboutorigame {
-	display: flex;
-	border: #ddd 1px solid;
-	margin-left: 5%;
-	margin-right: 5%;
-  }
-  
-  .origame {
-	margin: 2%;
-	width: 15rem;
-	display: flex;
-	flex-direction: column;
-  }
-  
+ 
   .logotext {
-	margin: 2%;
-	display: flex;
-	flex-direction: column;
-  }
-
-  
-  .text {
-	font-size: 1.5rem;
-	color: #000000;
-	text-align: left;
-	margin-left: 5%;
-
-  }
-
-  .aboutmalc {
-    display: flex;
-    border: #ddd 1px solid;
-    margin-left: 5%;
-    margin-right: 5%;
-	justify-content: right;
-    
-  }
- 
-  .malcom {
-    margin: 2%;
-    width: 15rem;
-    flex-direction: column;
-    display: flex;
-  }
-  
-  .malcomtext {
-    font-size: 1.5rem;
-    color: #000000;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    text-align: right;
-  }
-
-  .malcomtext h2{
-    font-size: 3rem;
-    color:  rgb(207, 28, 88);
-  }
-
-  .aboutyeji {
-    display: flex;
-    border: #ddd 1px solid;
-    margin-left: 5%;
-    margin-right: 5%;
-	justify-content: left;
-    
-  }
- 
-  .yeji {
-    margin: 2%;
-    width: 15rem;
-    flex-direction: column;
-    display: flex;
-  }
-  
-  .yejitext {
-    font-size: 1.5rem;
-    color: #000000;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    text-align: left;
-  }
-
-  .yejiext h2{
-    font-size: 3rem;
-    color:  rgb(207, 28, 88);
-  }
-
-@media screen and (max-width: 768px) {
-	nav ul {
-		display: none;
-	}
-	
-	#hamburger-menu {
-		display: block;
-	}
-
-	.logotext {
-		flex-direction: column;
-	  }
-}
+   flex-direction: column;
+    }
+ }
