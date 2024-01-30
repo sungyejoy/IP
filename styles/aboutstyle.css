@@ -82,6 +82,12 @@ header {
 	right: 2rem; 
   }
 
+  .aboutus h1{
+    color: #000000;
+    font-size: 3rem;
+    text-align: center;
+  }
+
 
   /* Person specified content box*/
   .aboutorigame {
@@ -113,7 +119,7 @@ header {
 
   }
 
-  .aboutmalc {
+  .aboutgoals {
     display: flex;
     border: #ddd 1px solid;
     margin-left: 5%;
@@ -122,14 +128,14 @@ header {
     
   }
  
-  .malcom {
+  .goalsimg {
     margin: 2%;
     width: 15rem;
     flex-direction: column;
     display: flex;
   }
   
-  .malcomtext {
+  .goals {
     font-size: 1.5rem;
     color: #000000;
     margin-left: 1rem;
@@ -137,12 +143,16 @@ header {
     text-align: right;
   }
 
-  .malcomtext h2{
+  .goals h2{
     font-size: 3rem;
-    color:  rgb(207, 28, 88);
+    color: #f0307a;;
   }
 
-  .aboutyeji {
+  .goals p{
+    padding-right: 2rem;
+  }
+
+  .aboutvision {
     display: flex;
     border: #ddd 1px solid;
     margin-left: 5%;
@@ -151,14 +161,19 @@ header {
     
   }
  
-  .yeji {
+  .visionimg {
     margin: 2%;
     width: 15rem;
     flex-direction: column;
     display: flex;
   }
+
+  .vision h2{
+    font-size: 3rem;
+    color: #f0307a;
+  }
   
-  .yejitext {
+  .vision {
     font-size: 1.5rem;
     color: #000000;
     margin-left: 1rem;
@@ -166,10 +181,30 @@ header {
     text-align: left;
   }
 
-  .yejiext h2{
-    font-size: 3rem;
-    color:  rgb(207, 28, 88);
+  .vision p{
+    padding-left: 2rem;
   }
+
+  .team{
+    border: 1px black solid;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+  }
+
+  .team h1{
+    border: 3px solid darkred;
+    padding: 15px 32px;
+    display: inline-block;
+    justify-content: center;
+    font-size: 3rem;
+    background-color:#f0307a;;
+    text-align: center;
+    color: white;
+    margin: auto;
+  }
+
 
 @media screen and (max-width: 768px) {
 	nav ul {
