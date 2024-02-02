@@ -276,4 +276,94 @@
   .logotext {
    flex-direction: column;
     }
- }
+
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #nav-links li {
+      margin: 0.5rem 0;
+    }
+  
+    #hamburger-menu {
+      display: block;
+    }
+  
+    main {
+      padding: 1rem;
+    }
+  
+    footer {
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .user-icon img {
+      height: 3rem;
+    }
+  
+    .aboutus h1 {
+      font-size: 2rem;
+    }
+  
+    .aboutorigame,
+    .aboutgoals,
+    .aboutvision,
+    .team,
+    .aboutmalc,
+    .aboutyeji {
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .origame,
+    .logotext,
+    .text,
+    .goalsimg,
+    .goals,
+    .visionimg,
+    .vision,
+    .team h1,
+    .malcimg,
+    .malcom,
+    .yejiimg,
+    .yeji {
+      margin: 1rem 0;
+    }
+  
+    .aboutgoals {
+      justify-content: center;
+    }
+  
+    .goals h2,
+    .vision h2,
+    .malcom h2,
+    .yeji h2 {
+      font-size: 2rem;
+    }
+  
+    .goals p,
+    .vision p,
+    .malcom h3,
+    .yeji h3 {
+      padding: 0;
+    }
+  
+    .malcom,
+    .yeji {
+      text-align: center;
+    }
+  }
+ 
