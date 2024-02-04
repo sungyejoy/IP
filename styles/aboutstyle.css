@@ -256,7 +256,7 @@
  
  
  @media screen and (max-width: 768px) {
-  nav ul {
+  /* nav ul {
    display: none;
   }
   
@@ -285,7 +285,7 @@
   
     #hamburger-menu {
       display: block;
-    }
+    } */
   
     main {
       padding: 1rem;

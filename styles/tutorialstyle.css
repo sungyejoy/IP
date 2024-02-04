@@ -2,27 +2,15 @@
 	box-sizing: border-box;
 }
 
-html, body {
-	width: 100%;
-	height: 100%;
+body {
+	margin: 0;
 	font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-	
-  }
+}
 
-  nav {
+nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-    background-color: #DED5F0;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    left:0;
-    margin: 0px;
-    width: 100%; /* Full width */
-    right: 0;
-    padding:10px 20px 
 }
   
 nav img {
@@ -63,6 +51,14 @@ nav img {
 
 main {
 	padding: 2rem;
+}
+
+footer {
+	background-color: #ffffff;
+	padding: 1rem;
+	text-align: center;
+	margin-top: 1rem;
+    color: rgb(0, 0, 0);
 }
 
 header h1{
@@ -160,7 +156,51 @@ header {
 	display: block;
   }
   
-
+/* Dropdown button - Categories*/
+/* Dropdown Button */
+.dropbtn {
+	background-color: #3498DB;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+	background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
 
 @media screen and (max-width: 768px) {
 	nav ul {

@@ -3,49 +3,182 @@
 <head>
 	<title>OrigaMe!</title>
 	<link rel="stylesheet" type="text/css" href="styles/tutorialstyle.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
+
+	<!-- Navigation Bar -->
 	<header>
-		<nav>
-			<div class="navbar">
-				<ul id="nav-links">
-					<li><a href="index.html"><img src="images/1x/Logo.png"></a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="tutorial.html">Tutorials</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li>
-						<div class="user-icon">
-						<img src="images/icon.png" alt="User Icon">
-					</div>
-				</li>
-				</ul>
-				
-				<div id="hamburger-menu" onclick="toggleMenu()">
-					<div></div>
-					<div></div>
-					<div></div>
+		<nav class="background-color: #F4F4ED;">
+			<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+			  <div class="relative flex h-16 items-center justify-between">
+				<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+				  <!-- Mobile menu button-->
+				  <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+					<span class="absolute -inset-0.5"></span>
+					<span class="sr-only">Open main menu</span>
+					<!--
+					  Icon when menu is closed.
+		  
+					  Menu open: "hidden", Menu closed: "block"
+					-->
+					<svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+					  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+					</svg>
+					<!--
+					  Icon when menu is open.
+		  
+					  Menu open: "block", Menu closed: "hidden"
+					-->
+					<svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+					  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				  </button>
 				</div>
+				<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+				  <div class="flex flex-shrink-0 items-center">
+					<img class="h-15 w-auto" src="images/origame_logo.png" alt="Your Company">
+				  </div>
+				  <div class="hidden sm:ml-6 sm:block">
+					<div class="flex space-x-4">
+					  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+					  <!-- <a href="about.html" class="bg-indigo-600 text-white rounded-md px-3 py-2 text-xl font-medium" aria-current="page">About Us</a> -->
+					  <a href="about.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">About Us</a>
+					  <a href="tutorial.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Tutorials</a>
+					  <a href="#" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Shop</a>
+					  <a href="contact.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Contact Us</a>
+					</div>
+				  </div>
+				</div>
+				<div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+				  <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+					<span class="absolute -inset-1.5"></span>
+					<span class="sr-only">View notifications</span>
+					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+					  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+					</svg>
+				  </button>
+		  
+				  <!-- Profile dropdown -->
+				  <div class="relative ml-3">
+					<div>
+					  <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+						<span class="absolute -inset-1.5"></span>
+						<span class="sr-only">Open user menu</span>
+						<img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+					  </button>
+					</div>
+		  
+					<!--
+					  Dropdown menu, show/hide based on menu state.
+		  
+					  Entering: "transition ease-out duration-100"
+						From: "transform opacity-0 scale-95"
+						To: "transform opacity-100 scale-100"
+					  Leaving: "transition ease-in duration-75"
+						From: "transform opacity-100 scale-100"
+						To: "transform opacity-0 scale-95"
+					-->
+					<div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+					  <!-- Active: "bg-gray-100", Not Active: "" -->
+					  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+					  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+					  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
 			</div>
-		</nav>
+		  
+			<!-- Mobile menu, show/hide based on menu state. -->
+			<div class="sm:hidden" id="mobile-menu">
+			  <div class="space-y-1 px-2 pb-3 pt-2">
+				<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+				<a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
+				<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
+				<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+				<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+			  </div>
+			</div>
+		  </nav>
+		  
 	</header>
-	<div class="heading">
-		<div class="title">
-			<h1>Tutorials</h1>
-		</div>
-		<div class="filter">
-		  <button onclick="dropDown()" class="dropbtn">Types of Origami</button>
-		  <div id="filterlist" class="dropdownContent">
-			<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-			<a href="#plant">Plants</a>
-			<a href="#animal">Animals</a>
-			<a href="#deco">Decorative</a>
-			<a href="#wear">Wearables</a>
-			<a href="#other">Others</a>
-		  </div>
-		</div>
-	  </div>
 	
+	<br>
+	<br>
+	<div class="content">
+	</div>
+
+	<body>
+		
+		<div class="containter">
+			<div class="text-left px-50">
+				<h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Tutorials</h1>
+				
+				<!-- Dropdown Button - Categories -->
+				<button id="dropdownBgHoverButton" data-dropdown-toggle="dropdownBgHover" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown checkbox <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+					</svg>
+					</button>
+					
+					<!-- Dropdown menu -->
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+						<div id="myDropdown" class="dropdown-content">
+						  <a href="#">Animals</a>
+						  <a href="#">Decorations</a>
+						  <a href="#">Plants</a>
+						  <a href="#">Vehicles</a>
+						</div>
+					</div>
+					
+					<!-- Tutorial Gallery -->
+					<div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-10 py-10">
+						<div>
+							<img class="h-auto max-w-full rounded-lg" src="images/origami/crane" alt="">
+							<h1 class="text-base font-bold tracking-tight text-gray-900 sm:text-2xl py-3 px-5">Crane</h1>
+						</div>
+						<div>
+							<img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+						</div>
+						<div>
+							<img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+						</div>
+						<div>
+							<img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+						</div>
+						<div>
+							<img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+						</div>
+						<div>
+							<img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+						</div>
+						<div>
+							<img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
+						</div>
+						<div>
+							<img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
+						</div>
+						<div>
+							<img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
+						</div>
+						<div>
+							<img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="">
+						</div>
+						<div>
+							<img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
+						</div>
+						<div>
+							<img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
+						</div>
+					</div>
+
+			</div>
+		</div>
+	</body>
 	
+
 	<footer>
 		<p>Copyright © 2023 OrigaMe!</p>
 	</footer>
