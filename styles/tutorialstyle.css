@@ -2,15 +2,27 @@
 	box-sizing: border-box;
 }
 
-body {
-	margin: 0;
+html, body {
+	width: 100%;
+	height: 100%;
 	font-family: Arial, sans-serif;
-}
+    display: flex;
+    flex-direction: column;
+	
+  }
 
-nav {
+  nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+    background-color: #DED5F0;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left:0;
+    margin: 0px;
+    width: 100%; /* Full width */
+    right: 0;
+    padding:10px 20px 
 }
   
 nav img {
@@ -51,14 +63,6 @@ nav img {
 
 main {
 	padding: 2rem;
-}
-
-footer {
-	background-color: #ffffff;
-	padding: 1rem;
-	text-align: center;
-	margin-top: 1rem;
-    color: rgb(0, 0, 0);
 }
 
 header h1{
