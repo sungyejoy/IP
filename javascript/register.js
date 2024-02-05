@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         body: JSON.stringify(jsondata),
     }
-fetch("https://interactivedev-5e86.restdb.io/rest/register", settings)
+    fetch("https://interactivedev-5e86.restdb.io/rest/register", settings)
         .then(response => response.json())
         .then(data => {
           console.log(data);
