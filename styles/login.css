@@ -1,4 +1,3 @@
-
 * {
 	box-sizing: border-box;
 }
@@ -8,8 +7,6 @@ html, body {
 	width: 100%;
 	height: 100%;
 	font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
 	
   }
 
@@ -17,14 +14,6 @@ html, body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-    background-color: #DED5F0;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    left:0;
-    margin: 0px;
-    width: 100%; /* Full width */
-    right: 0;
-    padding:10px 20px 
 }
   
 nav img {
@@ -67,17 +56,74 @@ main {
 	padding: 2rem;
 }
 
-footer {
-    background-color: #DED5F0;
-    padding: 1rem;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    margin-top: auto; /* Push footer to the bottom */
-  }
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4; /* Set background color */
+}
 
-  .main-content {
-    flex: 1; /* Allow main content to grow and push footer to the bottom */
-  }
+.container {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.loginimg {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Set button background color */
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Change button color on hover */
+}
+
+.loginimg {
+  width: 50%;
+}
+
+footer {
+	background-color: #ffffff;
+	padding: 1rem;
+	text-align: center;
+	margin-top: 1rem;
+    color: rgb(0, 0, 0);
+}
 
 header h1{
     color: white;
@@ -100,126 +146,26 @@ header {
 	right: 2rem; 
   }
 
-  .container {
-  width: 300px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  margin: auto; 
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
-}
-  
-  .login-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
+  .loginbox {
+    margin-left: 30%;
+    margin-right: 30%;
+    display: block;
   }
 
-  .options {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-  
-  .forgot-password,
-  .register {
-    text-decoration: none;
-    color: #007bff;
-    transition: color 0.3s ease;
-  }
-  
-  .forgot-password:hover,
-  .register:hover {
-    color: #0056b3;
-  }
-  
-    
-  
-   
-   
-   @media screen and (max-width: 768px) {
-    nav ul {
-     display: none;
-    }
-    
-    #hamburger-menu {
-     display: block;
-    }
-   
-    .logotext {
-     flex-direction: column;
-      }
-  
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    
-      #nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    
-      #nav-links li {
-        margin: 0.5rem 0;
-      }
-    
-      #hamburger-menu {
-        display: block;
-      }
-    
-      main {
-        padding: 1rem;
-      }
-    
-      footer {
-        padding: 0.5rem;
-        margin-top: 0.5rem;
-      }
-    
-      
-    }
-   
+
+
+@media screen and (max-width: 768px) {
+	nav ul {
+		display: none;
+	}
+	
+	#hamburger-menu {
+		display: block;
+	}
+
+	.logotext {
+		flex-direction: column;
+	  }
+}
+
+/* Footer */
