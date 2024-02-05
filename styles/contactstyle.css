@@ -1,13 +1,12 @@
 * {
 	box-sizing: border-box;
-  }
-  
-  html, body {
+}
+
+
+html, body {
 	width: 100%;
 	height: 100%;
 	font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
 	
   }
 
@@ -15,14 +14,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-    background-color: #DED5F0;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    left:0;
-    margin: 0px;
-    width: 100%; /* Full width */
-    right: 0;
-    padding:10px 20px 
 }
   
 nav img {
@@ -64,27 +55,51 @@ nav img {
 main {
 	padding: 2rem;
 }
-  
-  header h1 {
-	color: white;
-  }
-  
-  header {
+
+footer {
+	background-color: #ffffff;
+	padding: 1rem;
+	text-align: center;
+	margin-top: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+header h1{
+    color: white;
+}
+
+header {
 	background-color: #ffffff;
 	padding: 0.5rem;
 	border-bottom: 1px solid black;
   }
-  
+
   .user-icon img {
 	height: 4.5rem;
+
   }
   
   .user-icon {
-	position: absolute;
-	top: 0.5rem;
-	right: 2rem;
+	position: absolute; 
+	top: 0.5rem; 
+	right: 2rem; 
   }
-  
+
+
+  .content{
+	border: 1px black solid;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	transition: background .4s ease-in;
+	flex-direction: column;
+	
+	&.blue {
+	  background-color: #428aa6;
+	}
+  }
+
   .tablethread {
 	display: none;
   }
