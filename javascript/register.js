@@ -4,6 +4,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // What kind of interface we want at the start 
     const APIKEY = "65994a710b08685b19232be3";
+    const APIURL = "https://interactivedev-5e86.restdb.io/rest/register";
   
     //[STEP 1]: Create our submit form listener
     document.getElementById("formsubmitbtn").addEventListener("click", function(e) {
@@ -45,4 +46,35 @@ document.addEventListener("DOMContentLoaded", function() {
           document.getElementById("formsubmitbtn").disabled = false;
         });
     });//end click 
+
+    document.getElementById("formsubmitbtn").addEventListener("click", function(e) {
+        e.preventDefault();
+        console.log('form submmited!')
+
+        let passID = document.getElementById("password").value;
+        let emailID = document.getElementById("email").value;
+
+
+        let settings = {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                "x-apikey": APIKEY,
+                "Cache-Control": "no-cache"
+            },
+        }
+        
+        const response = fetch(APIURL, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                "x-apikey": APIKEY,
+            }
+        })
+        const data = response.jsondata
+        console.log(data)
+    })
 })
+
+
+

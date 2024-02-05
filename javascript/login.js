@@ -1,31 +1,37 @@
-function getContacts(limit = 10, all = true) {
-  
-    //[STEP 7]: Create our AJAX settings
-    let settings = {
-      method: "GET", //[cher] we will use GET to retrieve info
-      headers: {
-        "Content-Type": "application/json",
-        "x-apikey": APIKEY,
-        "Cache-Control": "no-cache"
-      },
-    }
+document.addEventListener("DOMContentLoaded", function() {
+    const APIKEY = "65994a710b08685b19232be3";
+    const APIURL = "https://interactivedev-5e86.restdb.io/rest/register";
 
-    //[STEP 8]: Make our AJAX calls
-    // Once we get the response, we modify our table content by creating the content internally. We run a loop to continuously add on data
-    // RESTDb/NoSql always adds in a unique id for each data; we tap on it to have our data and place it into our links 
-    fetch("https://interactivedev-5e86.restdb.io/rest/contact", settings)
-      .then(response => response.json())
-      .then(response => {
-        let content = "";
+    document.getElementById("formsubmitbtn").addEventListener("click", function(e) {
+        e.preventDefault();
+        console.log('form submitted!')
 
-        for (var i = 0; i < response.length && i < limit; i++) {
-            content = `${content}<tr id='${response[i]._id}'><td>${response[i].name}</td>
-            <td>${response[i].email}</td>
-            <td>${response[i].subj}</td>
-            <td>${response[i].msg}</td>
-           
-            <td><a href='#' class='delete' data-id='${response[i]._id}'>Del</a></td><td><a href='#update-contact-container' class='update' data-email='${response[i]._email}' data-name='${response[i].name}' data-gender='${response[i].subj}' data-age='${response[i].msg}'>Update</a></td></tr>`;
-  
-          }
+        let passID = document.getElementById("password").value;
+        let emailID = document.getElementById("email").value;
+
+        let url = `${APIURL}?password=${passID}&email=${emailID}`;
+
+        fetch(url, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                "x-apikey": APIKEY,
+            }
         })
-    }
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+    });
+});
+
+// start here loop to check username, if username not found kick him out. if username correct, check pw
