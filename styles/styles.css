@@ -142,6 +142,13 @@ header {
 	}
   }
 
+  /* review_page.html Submit Button CSS */
+  button,
+  button:focus,
+  button:hover {
+	  outline: none;
+  }
+
 
 @media screen and (max-width: 768px) {
 	nav ul {
