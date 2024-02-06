@@ -18,7 +18,7 @@ const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 const numID= loggedInUser.id;
 
 
-console.log(loggedInUser)
+console.log(loggedInUser)   
 
 
 fetch(`${APIURL}/${numID}/points`, settings)

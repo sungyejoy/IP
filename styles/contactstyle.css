@@ -146,40 +146,53 @@ header {
   #formsubmitbtn:hover {
 	background-color: #0056b3;
   }
+
+  
   
   .faq-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	max-width: 600px;
+	margin: 0 auto;
+  }
+
+  .faq-container h1{
+	font-size: 3rem;
+	text-align: center;
   }
   
-  .faq {
-	display: flex;
-	align-items: flex-start;
-	position: relative;
-	border: 1px solid #ccc;
+  details {
+	margin-bottom: 20px;
 	border-radius: 5px;
-	padding: 20px;
-	box-sizing: border-box;
+	overflow: hidden;
+	background-color: #f0f0f0;
   }
-  .faq-column {
-	padding-left: 1rem;
+  
+  summary {
+	padding: 10px;
+	cursor: pointer;
+	outline: none;
+	font-weight: bold;
   }
-
-  .contact {
-	padding-left: 13rem;
+  
+  summary::-webkit-details-marker {
+	display: none;
   }
- 
-  .vertical-line {
-	width: 1px;
-	background-color: #ccc;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 50%; /* Position the line in the middle of the container */
-	transform: translateX(-50%); /* Center the line */
+  
+  summary::after {
+	content: "+";
+	float: right;
   }
-
+  
+  details[open] summary::after {
+	content: "-";
+  }
+  
+  p {
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-top: none;
+	border-radius: 0 0 5px 5px;
+  }
 
 @media screen and (max-width: 768px) {
 	nav ul {
