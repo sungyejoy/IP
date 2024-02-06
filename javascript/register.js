@@ -44,7 +44,16 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
           console.log(data);
           document.getElementById("formsubmitbtn").disabled = false;
+
+          document.getElementById("username").value = "";
+          document.getElementById("password").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("first").value = "";
+          document.getElementById("last").value = "";
+          alert("Registration successful, you may login now")
+          window.location.href = "login.html";
         });
+        
     });//end click 
 
     
