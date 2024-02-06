@@ -248,7 +248,24 @@
 </footer>
 
 	</footer>
-	<script src="javascript/hamburger.js"></script>
 	<script src="javascript/carousel.js"></script>
+	<script>
+		const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+		if (loggedInUser && loggedInUser.userLogged) {
+			const userName= loggedInUser.username;
+			const userPassword = loggedInUser.password; 
+
+			alert(`Welcome ${userName}, you are logged in <3`);
+
+		} else {
+			const confirmLogout = confirm("You are not logged in. Do you want to go to the login page?");
+			if (confirmLogout) {
+				window.location.href = "login.html";
+	}
+		}
+
+	</script>
 </body>
 </html>
+

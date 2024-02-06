@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('form submitted!')
 
         let passID = document.getElementById("password").value;
-        let emailID = document.getElementById("email").value;
+        let userID = document.getElementById("username").value;
 
-        let url = `${APIURL}?password=${passID}&email=${emailID}`;
-
+        let url = `${APIURL}?q={"password": "${passID}", "username": "${userID}"}`;
+                
         fetch(url, {
             method: "GET",
             headers: {
@@ -18,43 +18,38 @@ document.addEventListener("DOMContentLoaded", function() {
                 "x-apikey": APIKEY,
             }
         })
-
+        
         .then(response => response.json())
         .then(data => {
-            data.forEach(item => {
-                console.log(item);
+            if (data.length > 0 ) {
+                console.log("User found in database", data);
 
-            });
-        })
+                const userLogged = true;
 
-        .catch(error => console.error('Error fetching ur dogshit', error));
+                localStorage.setItem("loggedInUser", JSON.stringify({username: userID, password: passID, userLogged}));
 
+                window.location.href = "index.html" 
+                
+                alert(`Logged in as ${userName}`)
+                    
 
-
-
-        /* .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
+            } else {
+                console.log("Username not found in database");
+                alert("Username or password not found, please register or try again")   
             }
-            validateForm();
-            return response.json();
         })
-        .then(data => {
-            console.log(data);
 
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        });
+        .catch(error => console.error('Error fetching ur data', error));
     });
-}); */
+})
 
-// start here loop to check username, if username not found kick him out. if username correct, check pw
-/* function validateForm() {
-    let x = document.forms["login"]["email"].value;
-    if (x !=="bob@email.com"){
-        alert("Email is not used")
-        return false;
-    }
-}
-*/
+/*const loggedInUser = JSON.parse(localStorage.getItem(loggedInUser));
+
+if (loggedInUser && loggedInUser.userlogged) {
+    const userName= loggedInUser.username;
+    const userPassword = loggedInUser.password; 
+
+    document.body.innerHTML += "Welcome ${userName}, you are logged in"
+} else {
+    window.location.href ="login.html"
+} */
