@@ -9,6 +9,10 @@ html, body {
 	font-family: Arial, sans-serif;
 	
   }
+  
+  a:hover {
+    background-color: #f0f0f0;
+  }
 
   nav {
 	display: flex;
@@ -165,7 +169,7 @@ header {
    .goals p{
      padding-right: 2rem;
    }
- 
+   
    .aboutvision {
      display: flex;
      border: #ddd 1px solid;

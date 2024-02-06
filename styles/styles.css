@@ -48,6 +48,10 @@ footer {
     color: rgb(0, 0, 0);
 }
 
+a:hover {
+	background-color: #f0f0f0;
+  }
+
 header h1{
     color: white;
 }

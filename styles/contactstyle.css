@@ -160,6 +160,10 @@ header {
 	height: 10rem;
   }
   
+  a:hover {
+	background-color: #f0f0f0;
+  }
+  
   #contact-submit {
 	padding: 10px 20px;
 	font-size: 16px;
