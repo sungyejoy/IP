@@ -47,33 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });//end click 
 
-    document.getElementById("formsubmitbtn").addEventListener("click", function(e) {
-        e.preventDefault();
-        console.log('form submmited!')
-
-        let passID = document.getElementById("password").value;
-        let emailID = document.getElementById("email").value;
-
-
-        let settings = {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                "x-apikey": APIKEY,
-                "Cache-Control": "no-cache"
-            },
-        }
-        
-        const response = fetch(APIURL, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                "x-apikey": APIKEY,
-            }
-        })
-        const data = response.jsondata
-        console.log(data)
-    })
+    
 })
 
 
