@@ -245,16 +245,17 @@
     </div>
 </footer>
 
-	<script src="javascript/hamburger.js"></script>
 	<script src="javascript/carousel.js"></script>
 	<script>
 		const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+		const userPoints = localStorage.setItem('points',0)
+		console.log(data)
 
 		if (loggedInUser && loggedInUser.userLogged) {
 			const userName= loggedInUser.username;
 			const userPassword = loggedInUser.password; 
 
-			alert(`Welcome ${userName}, you are logged in <3`);
+			alert(`Welcome ${userName}, you are logged in`);
 
 		} else {
 			const confirmLogout = confirm("You are not logged in. Do you want to go to the login page?");
