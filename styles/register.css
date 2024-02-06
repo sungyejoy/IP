@@ -1,0 +1,121 @@
+/* Reset box-sizing for all elements */
+/* Reset box-sizing for all elements */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Set default styles for HTML and body */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+/* Navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid black;
+  }
+  
+  nav img {
+    height: 4rem;
+    padding: 10px; /* Add padding to the logo */
+  }
+  
+  #nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Align navigation items vertically with the logo */
+  }
+  
+  #nav-links li {
+    margin-right: 1rem;
+  }
+  
+  #nav-links li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .container {
+    display: flex;
+    align-items: stretch; /* Stretch flex items to match height */
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .image-container {
+    overflow: hidden;
+    max-width: 20%; /* Adjust width as needed */
+  }
+  
+  .card {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 140%; /* Adjust width as needed */
+  }
+  
+  .form-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Example styles for form inputs */
+  .form-group {
+    margin-bottom: 15px;
+    height: 100%;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #030303;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    padding-bottom: 12px;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      display: none;
+    }
+  
+    #hamburger-menu {
+      display: block;
+    }
+  
+    .logotext {
+      flex-direction: column;
+    }
+  }
+  

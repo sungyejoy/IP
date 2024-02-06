@@ -4,21 +4,8 @@
 	<title>About</title>
 	<link rel="stylesheet" type="text/css" href="styles/aboutstyle.css">
 	<script src="https://cdn.tailwindcss.com"></script>
-	<!-- <style>
-		@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Heebo:wght@500&family=Inter:wght@400;500;600;700;800&family=Public+Sans:wght@600&family=Roboto:wght@400;900&display=swap');
-	</style> -->
-	<!-- <script>
-		tailwind.config = {
-// 		  theme: {
-// 			fontFamily:{
-// 				body: [font-family: 'Agbalumo', system-ui;
-// font-family: 'Heebo', sans-serif;
-// font-family: 'Inter', sans-serif;
-// font-family: 'Public Sans', sans-serif;
-// font-family: 'Roboto', sans-serif;]'
-		
-// 		  		}
-			} -->
+  <script src="javascript/signout.js"></script>
+
 
 </head>
 <body>
@@ -98,8 +85,7 @@
 					<div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
 					  <!-- Active: "bg-gray-100", Not Active: "" -->
 					  <a href="login.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Login</a>
-					  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
-					  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+					  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2" onclick="clearLocalStorage()">Sign out</a>
 					</div>
 				  </div>
 				</div>

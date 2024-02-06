@@ -44,36 +44,19 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
           console.log(data);
           document.getElementById("formsubmitbtn").disabled = false;
+
+          document.getElementById("username").value = "";
+          document.getElementById("password").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("first").value = "";
+          document.getElementById("last").value = "";
+          alert("Registration successful, you may login now")
+          window.location.href = "login.html";
         });
+        
     });//end click 
 
-    document.getElementById("formsubmitbtn").addEventListener("click", function(e) {
-        e.preventDefault();
-        console.log('form submmited!')
-
-        let passID = document.getElementById("password").value;
-        let emailID = document.getElementById("email").value;
-
-
-        let settings = {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                "x-apikey": APIKEY,
-                "Cache-Control": "no-cache"
-            },
-        }
-        
-        const response = fetch(APIURL, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                "x-apikey": APIKEY,
-            }
-        })
-        const data = response.jsondata
-        console.log(data)
-    })
+    
 })
 
 

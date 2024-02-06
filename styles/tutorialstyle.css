@@ -195,6 +195,10 @@ header {
 	text-decoration: none;
 	display: block;
   }
+
+  a:hover {
+	background-color: #f0f0f0;
+  }
   
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd;}
