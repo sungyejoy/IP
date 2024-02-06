@@ -24,9 +24,10 @@ document.addEventListener("DOMContentLoaded", function() {
             if (data.length > 0 ) {
                 console.log("User found in database", data);
 
+                const numID = data[0]._id; 
                 const userLogged = true;
 
-                localStorage.setItem("loggedInUser", JSON.stringify({username: userID, password: passID, userLogged}));
+                localStorage.setItem("loggedInUser", JSON.stringify({username: userID, password: passID, userLogged, id: numID}));
 
                 window.location.href = "index.html" 
                 
