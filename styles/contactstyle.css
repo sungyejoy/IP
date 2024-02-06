@@ -1,3 +1,4 @@
+
 * {
 	box-sizing: border-box;
 }
@@ -40,22 +41,6 @@ nav img {
 	font-size: 1.3rem;
 }
 
-#hamburger-menu {
-	display: none;
-	cursor: pointer;
-}
-
-#hamburger-menu div {
-	width: 25px;
-	height: 3px;
-	background-color: rgb(0, 0, 0);
-	margin: 4px;
-}
-
-main {
-	padding: 2rem;
-}
-
 footer {
 	background-color: #ffffff;
 	padding: 1rem;
@@ -63,6 +48,10 @@ footer {
 	margin-top: 1rem;
     color: rgb(0, 0, 0);
 }
+
+a:hover {
+	background-color: #f0f0f0;
+  }
 
 header h1{
     color: white;
@@ -72,32 +61,6 @@ header {
 	background-color: #ffffff;
 	padding: 0.5rem;
 	border-bottom: 1px solid black;
-  }
-
-  .user-icon img {
-	height: 4.5rem;
-
-  }
-  
-  .user-icon {
-	position: absolute; 
-	top: 0.5rem; 
-	right: 2rem; 
-  }
-
-
-  .content{
-	border: 1px black solid;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	transition: background .4s ease-in;
-	flex-direction: column;
-	
-	&.blue {
-	  background-color: #428aa6;
-	}
   }
 
   .tablethread {
@@ -149,22 +112,23 @@ header {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
   
-  #contact-name,
-  #contact-email,
-  #contact-subj {
+  #name,
+  #email,
+  #subj {
 	width: 100%;
   }
   
-  #contact-msg {
+  #msg {
 	width: 30rem;
 	height: 10rem;
   }
-  
+
   a:hover {
 	background-color: #f0f0f0;
   }
   
-  #contact-submit {
+  
+  #formsubmitbtn {
 	padding: 10px 20px;
 	font-size: 16px;
 	font-weight: bold;
@@ -179,7 +143,7 @@ header {
 	float: right;
   }
   
-  #contact-submit:hover {
+  #formsubmitbtn:hover {
 	background-color: #0056b3;
   }
   
@@ -215,17 +179,19 @@ header {
 	left: 50%; /* Position the line in the middle of the container */
 	transform: translateX(-50%); /* Center the line */
   }
-  
-  @media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 768px) {
 	nav ul {
-	  display: none;
+		display: none;
 	}
-  
+	
 	#hamburger-menu {
-	  display: block;
+		display: block;
 	}
-  
+
 	.logotext {
-	  flex-direction: column;
-	}
-  }
+		flex-direction: column;
+	  }
+}
+
