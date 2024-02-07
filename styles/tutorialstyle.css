@@ -230,14 +230,14 @@ header {
 	-ms-flex-pack: center;
 	text-align: center;
 	border: none;
-	background-color: #ffeba7;
+	background-color: #4F46E5;
 	cursor: pointer;
-	color: #102770;
+	color: #F9FAFB;
 	box-shadow: 0 12px 35px 0 rgba(255,235,167,.15);
   }
   .dark-light:checked ~ .sec-center .for-dropdown{
-	background-color: #102770;
-	color: #ffeba7;
+	background-color: #F9FAFB;
+	color: #4F46E5;
 	box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
   }
 
@@ -356,15 +356,15 @@ header {
 	-ms-flex-pack: center;
 	text-align: center;
 	border: none;
-	background-color: #ffeba7;
+	background-color: #4F46E5;
 	cursor: pointer;
-	color: #102770;
+	color: #F9FAFB;
 	box-shadow: 0 12px 35px 0 rgba(255,235,167,.15);
 }
 
 .dark-light:checked ~ .sec-center2 .for-dropdown2 {
-    background-color: #102770;
-	color: #ffeba7;
+    background-color: #F9FAFB;
+	color: #4F46E5;
 	box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
 }
 

@@ -2,6 +2,9 @@
 	box-sizing: border-box;
 }
 
+html {
+	cursor: url("images/1x/cursor.png"), auto;
+  }
 
 html, body {
 	width: 100%;
