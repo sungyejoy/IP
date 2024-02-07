@@ -9,55 +9,18 @@ html, body {
 	font-family: Arial, sans-serif;
 	
   }
-  
-  a:hover {
-    background-color: #f0f0f0;
-  }
 
-  nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  #navbar {
+	padding: 5px;
+}
+
+#navtext {
+	margin-top: 5px;
 }
   
 nav img {
 	height: 4rem;
 	padding: 10px; /* Add padding to the logo */
-}
-  
-#nav-links {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center; /* Align navigation items vertically with the logo */
-}
-  
-#nav-links li {
-	margin-right: 1rem;
-  }
-  
-  #nav-links li a {
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-	margin-left: 1rem;
-	font-size: 1.3rem;
-}
-
-#hamburger-menu {
-	display: none;
-	cursor: pointer;
-}
-
-#hamburger-menu div {
-	width: 25px;
-	height: 3px;
-	background-color: rgb(0, 0, 0);
-	margin: 4px;
-}
-
-main {
-	padding: 2rem;
 }
 
 footer {
@@ -68,6 +31,10 @@ footer {
     color: rgb(0, 0, 0);
 }
 
+a:hover {
+	background-color: #f0f0f0;
+  }
+
 header h1{
     color: white;
 }
@@ -75,18 +42,7 @@ header h1{
 header {
 	background-color: #ffffff;
 	padding: 0.5rem;
-	/* border-bottom: 1px solid black; */
-  }
-
-  .user-icon img {
-	height: 4.5rem;
-
-  }
-  
-  .user-icon {
-	position: absolute; 
-	top: 0.5rem; 
-	right: 2rem; 
+	border-bottom: 1px solid black;
   }
 
 
