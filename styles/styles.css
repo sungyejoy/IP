@@ -156,6 +156,10 @@ header {
 	height: 80%; 
   }
 
+  #image-container {
+	margin-top: 20px;
+  }
+
   /* review_page.html Submit Button CSS */
   button,
   button:focus,
