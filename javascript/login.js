@@ -28,9 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 const emailID = data[0].email;
                 const firstID = data[0].first;
                 const lastID = data[0].last;
+                const pointsID = data[0].points;
                 const userLogged = true;
 
-                localStorage.setItem("loggedInUser", JSON.stringify({username: userID, password: passID, userLogged, id: numID, first: firstID, last: lastID, email: emailID}));
+                localStorage.setItem("loggedInUser", JSON.stringify({username: userID, password: passID, userLogged, id: numID, first: firstID, last: lastID, email: emailID, points: pointsID}));
 
                 window.location.href = "index.html" 
                 
