@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/tutorialstyle.css">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script src="javascript/signout.js"></script>
+	<script src="javascript/dropdown.js"></script>
 
 </head>
 <body>
@@ -118,19 +119,21 @@
 		<div class="container px-60">
 			<div class="text-left px-50">
 				<h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Tutorials</h1>
-					
-					<!-- Dropdown menu -->
-					<div class="dropdown">
-						<button onclick="myFunction()" class="dropbtn">Dropdown</button>
-						<div id="myDropdown" class="dropdown-content">
-						  <a href="#">Animals</a>
-						  <a href="#">Decorations</a>
-						  <a href="#">Plants</a>
-						  <a href="#">Vehicles</a>
-						</div>
+				<br>
+				<br>
+				<div class="sec-center"> 	
+					<input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+					<label class="for-dropdown" for="dropdown">Dropdown Menu <i class="uil uil-arrow-down"></i></label>
+					<div class="section-dropdown"> 
+						<input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
+						<div class="section-dropdown-sub"> 
+							<a href="#">Option 1 <i class="uil uil-arrow-right"></i></a>
+							<a href="#">Option 2 <i class="uil uil-arrow-right"></i></a>
+
 					</div>
-					
-					
+				</div>
+
+
 					<div class="bg-white">
 						<div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
 						<!-- <h2 class="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2> -->
@@ -467,8 +470,5 @@
       </div>
     </div>
 </footer>
-
-	<script src="javascript/hamburger.js"></script>
-	<script src="javascript/dropdown.js"></script>
 
 </html>

@@ -1,20 +1,19 @@
-function dropDown() {
-    var dropdown = document.getElementById("filterlist");
-    dropdown.classList.toggle("show");
-  }
+var options = [
+  { value: 'option1', text: 'Option 1' },
+  { value: 'option2', text: 'Option 2' },
+  { value: 'option3', text: 'Option 3' }
+];
 
-  function filterFunction() {
-    var input, filter, div, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    div = document.getElementById("filterlist");
-    a = div.getElementsByTagName("a");
-    for (i = 0; i < a.length; i++) {
-      txtValue = a[i].textContent || a[i].innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        a[i].style.display = "";
-      } else {
-        a[i].style.display = "none";
-      }
-    }
-  }
+// Function to add options to the select element
+function addOptions() {
+  var select = document.getElementById('mySelect');
+  options.forEach(function(option) {
+    var newOption = document.createElement('option');
+    newOption.value = option.value;
+    newOption.text = option.text;
+    select.add(newOption);
+  });
+}
+
+// Call the function to add options
+addOptions();
