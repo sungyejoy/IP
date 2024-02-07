@@ -17,12 +17,16 @@ document.addEventListener("DOMContentLoaded", function() {
         return response.json();
       })
       .then(data => {
+        if (Array.isArray(data) && data.length > 0) {
         const imageUrl = data[0].origami; 
-    const image = document.createElement("img");
-        console.log(imageUrl)
-        console.log(image)
+        const image = document.createElement("img");
+        console.log(imageUrl);
+        console.log(image);
         image.src = imageUrl;
         document.getElementById("image-container").appendChild(image);
+        } else {
+          console.error("image no work");
+        }
       })
       .catch(error => {
         console.error("Error fetching image:", error);
