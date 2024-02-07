@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("subj").value = "";
         document.getElementById("msg").value = "";
         alert("Feedback sent!")
-        window.location.href = "index.html";
+        //window.location.href = "index.html";
       });
       
   });//end click 

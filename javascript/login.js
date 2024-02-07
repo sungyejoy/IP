@@ -25,13 +25,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log("User found in database", data);
 
                 const numID = data[0]._id; 
+                const emailID = data[0].email;
+                const firstID = data[0].first;
+                const lastID = data[0].last;
                 const userLogged = true;
 
-                localStorage.setItem("loggedInUser", JSON.stringify({username: userID, password: passID, userLogged, id: numID}));
+                localStorage.setItem("loggedInUser", JSON.stringify({username: userID, password: passID, userLogged, id: numID, first: firstID, last: lastID, email: emailID}));
 
                 window.location.href = "index.html" 
                 
-                alert(`Logged in as ${userName}`)
+                alert(`Logged in as ${userID}`)
                     
 
             } else {
