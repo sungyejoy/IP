@@ -130,11 +130,12 @@ header {
 	background-color: #0056b3;
   }
 
-  
+
   
   .faq-container {
 	max-width: 600px;
 	margin: 0 auto;
+	margin-top: 5%;
   }
 
   .faq-container h1{

@@ -101,11 +101,12 @@ header {
      
    }
   
-   .goalsimg {
+   .goalsimg img{
      margin-left: 2%;
      width: 25rem;
      flex-direction: column;
      display: flex;
+     border-radius: 10%;
    }
    
    .goals {
@@ -135,11 +136,12 @@ header {
      
    }
   
-   .visionimg {
+   .visionimg img{
      margin-right: 2%;
      width: 25rem;
      flex-direction: column;
      display: flex;
+     border-radius: 10%;
    }
  
    .vision h2{
@@ -161,12 +163,10 @@ header {
    }
  
    .team{
-     /* border: 1px black solid; */
      justify-content: center;
      display: flex;
      flex-direction: column;
      padding: 2%;
-     background-color: #DED5F0;
      width: 100%;
    }
  
@@ -182,16 +182,15 @@ header {
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
-   justify-content: right;
-   text-align: right;
-    background-color: #F4F4ED;
-    /* border: 1px solid black; */
+    justify-content: right;
+    text-align: right;
     padding-top: 2rem;
+    border: #ddd 1px solid;
   }
  
   .malcimg{
   margin: 2%;
-  width: 17rem;
+  width: 10rem;
   height: 10rem; 
   border-radius: 50%;
   overflow: hidden; 
@@ -200,7 +199,7 @@ header {
 
 .yejiimg{
   margin: 2%;
-  width: 19rem;
+  width: 10rem;
   height: 10rem; 
   border-radius: 50%;
   overflow: hidden; 
@@ -240,8 +239,6 @@ header {
     margin-left: 5%;
     margin-right: 5%;
    justify-content: left;
-   background-color: #F4F4ED;
-   /* border: 1px solid black; */
    padding-top: 2rem;
   }
 
@@ -253,6 +250,11 @@ header {
   .yeji h3{
     font-size: 1.5rem;
     color: #6e657e;
+  }
+
+  .complogo {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   
