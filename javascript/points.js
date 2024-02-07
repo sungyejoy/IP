@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "email": emailID,
         "first": firstID,
         "last": lastID,
-        "points": currentPoints + 40 // Add 40 points to the current points
+        "points": currentPoints + 50 
       };
   
       let settings = {
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
           console.log(JSON.stringify(data));
           console.log("Points added");
-          alert("You have received 40 points!"); 
+          alert("You have received 50 points!"); 
           loggedInUser.points = jsondata.points;
           localStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
           //window.location.href = "tutorial.html";

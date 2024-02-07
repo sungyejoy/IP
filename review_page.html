@@ -4,6 +4,7 @@
 	<title>OrigaMe!</title>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<script src="https://cdn.tailwindcss.com"></script>
+    <script src="javascript/points.js">     </script>
 </head>
 
 
@@ -279,9 +280,14 @@
 
         <div class="flex items-stretch ">
             <div class="self-center flex-1 text-center">
-                <button id="button" type="submit" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48">Submit</button>
+                <button id="button" onclick="showModal()" type="submit" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48">Submit</button>
             </div> 
         </div>
+
+        <div id="myModal" class="modal">
+            <p>pop-up!</p>
+            <button onclick="closeModal()">Close</button>
+          </div>
 
         <!-- Previous & Next & No Thanks Button -->
         <div class="flex justify-center content-center py-10">
@@ -293,8 +299,7 @@
             Previous
             </a>
 
-            <a href="tutorial.html" class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white border border-gray-300 
-            rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+            <a href="tutorial.html" id ="claim" name="claim" class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
                 No Thanks
             </a>
 
@@ -386,6 +391,15 @@
         </div>
         </div>
     </footer>
-	
+	<script>
+        function showModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+    
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+      </script>
 </body>
+
 </html>
