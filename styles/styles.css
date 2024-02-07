@@ -209,7 +209,78 @@ header {
 	height: 65vh; /* Limit the height to 80% of the viewport height */
 	margin: 0 auto; /* Center the image horizontally */
   }
+
+  .px-40 {
+	margin: auto;
+  }
   
+  .points-container {
+	background-color: #DED5F0; 
+	padding: 10px; 
+	border-radius: 8px; 
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+	margin-bottom: 20px; 
+	width: 30%;
+	align-items: center;
+  }
+
+  #pointsID{
+	color: #332a42;
+  }
+
+  .flex-container {
+	display: flex;
+	gap: 20px; /* Add gap between gallery containers */
+	margin-left: 15%;
+	align-items: center;
+  }
+
+  .flex-gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); 
+	gap: 20px; 
+  }
+  
+  .flex-gallery img {
+	width: 100%;
+	border-radius: 8px;
+	border: 2px solid #DED5F0;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .flex-gallery img:hover {
+	transform: scale(1.1); /* Increase the size of the image */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+  }
+
+  .header-container {
+	text-align: left;
+	margin-bottom: 10px; 
+	font-size: 2rem;
+	font-weight: bold;
+  }
+
+  #heading {
+	margin-left: 15%;
+  }
+
+  .gallery-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center-align items horizontally */
+  }
+  
+  .gallery-item {
+
+	height: 10rem; /* Adjust height as needed */
+	width: 10rem;
+
+  }
+
+  .line {
+	border: none; /* Remove default border */
+	border-top: 1.5px solid #000; /* Set top border with 2px thickness and black color */
+  }
   /* Style for the button */
   .modal button {
 	display: block; /* Make the button a block element */
