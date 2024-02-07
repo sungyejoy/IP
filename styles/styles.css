@@ -62,6 +62,34 @@ header {
 	border-bottom: 1px solid black;
   }
 
+  .crane-container {
+	display: flex;
+	justify-content: center;
+	align-items: center; /* Set height to viewport height for vertical centering */
+	text-align: center; /* Center text horizontally */
+  }
+  
+  /* Additional styles for text and image */
+  .crane-container .text-left {
+	width: 100%; /* Set max width for text container */
+  }
+  
+  .crane-container h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2;
+	color: #333;
+	margin-bottom: 1.5rem;
+	text-align: center;
+  }
+  
+  .crane-container img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
   .content{
 	border: 1px black solid;
 	width: 100%;
@@ -74,6 +102,118 @@ header {
 	&.blue {
 	  background-color: #428aa6;
 	}
+  }
+  
+  .container {
+	display: flex;
+	margin: 0 auto; /* Center the container horizontally */
+  }
+
+  #openButton {
+	position: absolute;
+	top: 28%;
+	left: 57%;
+	background-color: #DED5F0; /* Light purple */
+	border: 1px solid black;
+	color: black;
+	padding: 16px 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 50%; /* Make the button round */
+	transition: background-color 0.3s; /* Smooth color transition */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  #openButton:hover {
+	background-color: #C4B2E1; 
+  }
+  
+ 
+  .popup {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #DED5F0;
+	padding: 20px;
+	z-index: 1000;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+	border-radius: 10px;
+	max-width: 80%;
+	text-align: center;
+	border: 5px solid #c2b4da;
+  }
+  
+ 
+  #closeButton {
+	background-color: #f44336; /* Red */
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s; /* Smooth color transition */
+  }
+  
+  #closeButton:hover {
+	background-color: #d32f2f; /* Darker red on hover */
+  }
+  
+  /* Style for the iframe */
+  #sketchfabIframe {
+	width: 60vw;
+	height: 50vh;
+	border: none;
+	border-radius: 10px; /* Slightly rounded edges */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+	margin-top: 2%;
+  }
+  
+  .popup h1{
+	  font-size: 2rem;
+	  text-align: center;
+  }
+
+  .modal-container {
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	overflow: hidden; 
+	width: 50%; 
+	margin: 0 auto; 
+  }
+
+  #upload-form {
+	display: flex;
+	flex-direction: column; /* Stack items vertically */
+	align-items: center;
+	justify-content: center;
+  }
+  
+  
+  #upload-form label:hover {
+	background-color: #edf2f7;
+  }
+  
+  /* Style for the image */
+  .modal img {
+	width: 60%; /* Ensure the image does not exceed its container */
+	height: 65vh; /* Limit the height to 80% of the viewport height */
+	margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  /* Style for the button */
+  .modal button {
+	display: block; /* Make the button a block element */
+	margin: 20px auto 0; /* Add some top margin to separate it from the image */
   }
 
 /* Card Carousell */

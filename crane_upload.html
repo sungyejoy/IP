@@ -174,7 +174,7 @@
 				  </label>
 				</div>
 				<br>
-				<button id="formsubmitbtn" type="submit">Upload Image</button>
+				<button id="formsubmitbtn" type="submit" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48">Upload Image</button>
 			  </form>
 
         </div>
@@ -289,10 +289,9 @@
 			<div class="mb-5">
 				<input type="text" id="large-input" placeholder="Enter feedback..." class="block w-full p-11 text-gray-900 border border-gray-300
 				 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
-				  dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+				  dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
 			</div>
 		</form>
-		
 		</div>
 	</div>
 
@@ -302,13 +301,16 @@
 		</div> 
 	</div>
 
-	<div id="myModal" class="modal">
-		<p>pop-up!</p>
-		<button onclick="closeModal()">Close</button>
-	  </div>
-	  <br>
-	  <br>
 
+	<div class="modal-container">
+		<div id="myModal" class="modal">
+		  <img src="images/points.png">
+		  <button id="claim" onclick="closeModal()" type="submit" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48">Explore other Origami!</button>
+		</div>
+	  </div>
+
+	  <br>
+	  <br>
 	<!-- Previous & Next & No Thanks Button -->
 	<div class="flex justify-center content-center space-x-3  h-44">
 		
@@ -332,19 +334,6 @@
 		</a>
 
 	</div>
-
-
-
-</body>
-<script>
-	function showModal() {
-	  document.getElementById("myModal").style.display = "block";
-	}
-
-	function closeModal() {
-	  document.getElementById("myModal").style.display = "none";
-	}
-  </script>
 
 	<!-- Footer -->
 	<footer class="bg-white dark:bg-gray-900">
@@ -431,6 +420,16 @@
 		</div>
 		</div>
 	</footer>
+	<script>
+		function showModal() {
+		  document.getElementById("myModal").style.display = "block";
+		}
+	
+		function closeModal() {
+		  document.getElementById("myModal").style.display = "none";
+		}
+	  </script>
+	  </body>
 	
 
 </html>

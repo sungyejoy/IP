@@ -146,17 +146,33 @@
     </nav>
 
     <!-- Title -->
-    <div class="container">
+    
+    <div class="crane-container">
         <div class="text-left px-56">
             <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl pb-11">Congratulations!<br>You have created a paper crane!</h1>
+            <div id="popup" class="popup">
+              <br>
+              <h1>3D Model View</h1>
+                <iframe
+                  id="sketchfabIframe"
+                  src=""
+                  frameborder="0"
+                  allow="autoplay; fullscreen; vr"
+                  mozallowfullscreen="true"
+                  webkitallowfullscreen="true">
+                </iframe>
+                <button id="closeButton">Close</button>
+              </div>
+            
             <img class="h-auto max-w-lg mx-auto rounded-lg" src="images/crane_tutorial/final.jpg" alt="Final product of Crane Origami">
         </div>
     </div>
+    <button id="openButton"> 3D </button>
 
-    <!-- Previous & Next Button -->
-    <div class="container h-44">
+  
 
-        <!-- Previous Button -->
+    <div class="container">
+
         <a href="crane_video.html" class="flex items-center justify-center px-4 h-10 me-3 text-base font-medium text-gray-500 bg-white border border-gray-300
          rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
         <svg class="w-3.5 h-3.5 me-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -164,7 +180,6 @@
         </svg>
         Previous
         </a>
-
         <!-- Next Button -->
         <a href="crane_upload.html" class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white border border-gray-300
          rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
@@ -177,6 +192,21 @@
     </div>
 
 </body>
+<script>
+  document.getElementById('openButton').addEventListener('click', function() {
+    var popup = document.getElementById('popup');
+    var iframe = document.getElementById('sketchfabIframe');
+    iframe.src = 'https://sketchfab.com/models/976ea2f91d504e3cbbbab23aae7ee392/embed';
+    popup.style.display = 'block';
+  });
+
+  document.getElementById('closeButton').addEventListener('click', function() {
+    var popup = document.getElementById('popup');
+    var iframe = document.getElementById('sketchfabIframe');
+    iframe.src = '';
+    popup.style.display = 'none';
+  });
+</script>
 
 
 <!-- Footer -->
@@ -263,6 +293,7 @@
           </div>
       </div>
     </div>
+    
 </footer>
 
 	
