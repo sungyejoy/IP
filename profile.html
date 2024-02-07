@@ -312,5 +312,17 @@
       </div>
     </div>
 </footer>
+<script>
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+if (loggedInUser && loggedInUser.userLogged) {
+  const userName = loggedInUser.username;
+  alert(`Welcome ${userName}, you are logged in`);
+} else {
+  const confirmLogout = confirm("You are not logged in. Login to view your profile");
+  window.location.href = "login.html";
+}
+
+</script>
 </body>
 </html>
