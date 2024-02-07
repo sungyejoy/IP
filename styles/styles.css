@@ -10,34 +10,17 @@ html, body {
 	
   }
 
-  nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  #navbar {
+	padding: 5px;
+}
+
+#navtext {
+	margin-top: 5px;
 }
   
 nav img {
 	height: 4rem;
 	padding: 10px; /* Add padding to the logo */
-}
-  
-#nav-links {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center; /* Align navigation items vertically with the logo */
-}
-  
-#nav-links li {
-	margin-right: 1rem;
-  }
-  
-  #nav-links li a {
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-	margin-left: 1rem;
-	font-size: 1.3rem;
 }
 
 footer {
