@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>OrigaMe!</title>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/cart.css">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script src="javascript/signout.js"></script>
 </head>
@@ -77,43 +77,113 @@
 		  </nav>
 		  
 	</header>
-
-
-	<div class="checkout-container">
-        <div class="logo">
-            <img src="images/origame_logo.png" alt="Company Logo" width="150">
-        </div>
-    
-        <form class="payment">
-            <div class="form-group">
-                <label for="customerName">Customer Name:</label>
-                <input type="text" id="customerName" name="customerName">
-            </div>
-    
-            <div class="form-group">
-                <label for="customerEmail">Customer Email:</label>
-                <input type="email" id="customerEmail" name="customerEmail">
-            </div>
-    
-            <div class="form-group">
-                <label for="shippingAddress">Shipping Address:</label>
-                <textarea id="shippingAddress" name="shippingAddress"></textarea>
-            </div>
-    
-            <div class="form-group">
-                <label for="paymentMethod">Payment Method:</label>
-                <select id="paymentMethod" name="paymentMethod">
-                    <option value="creditCard">Credit Card</option>
-                    <option value="paypal">PayPal</option>
-                </select>
-            </div>
-    
-            <div class="self-center flex-1 text-center">
-                <button id="button" type="submit" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48">Submit</button>
-            </div> 
-        </form>
+<div class="shopping-cart">
+  <!-- Title -->
+  <div class="title">
+    Shopping Bag
+  </div>
+ 
+  <!-- Product #1 -->
+  <div class="item">
+    <div class="buttons">
     </div>
 
+    <h1>Shiny Origami Paper</h1>
+ 
+    <div class="image">
+      <img src="images/shop/14_paper.jpg">
+    </div>
+ 
+    <div class="description">
+      <span>100pcs</span>
+      <span>Shiny Foil</span>
+    </div>
+ 
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button">+</button>
+        
+      </button>
+      <input type="text" name="name" value="1">
+      <button class="minus-btn" type="button" name="button">-</button>
+      </button>
+    </div>
+ 
+    <div class="total-price">$10.10</div>
+  </div>
+
+  <div class="item">
+    <div class="buttons">
+    </div>
+
+    <h1>Cherry Blossom Origami Paper</h1>
+ 
+    <div class="image">
+      <img src="images/shop/1_paper_3.jpg">
+    </div>
+ 
+    <div class="description">
+      <span>200pcs</span>
+      <span>Sakura Blossom Pattern</span>
+    </div>
+ 
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button">+</button>
+        
+      </button>
+      <input type="text" name="name" value="1">
+      <button class="minus-btn" type="button" name="button">-</button>
+      </button>
+    </div>
+ 
+    <div class="total-price">$10.30</div>
+  </div>
+  </div>
+
+  <div class="checkout-container">
+    <div class="logo">
+        <img src="images/origame_logo.png" alt="Company Logo" width="150">
+    </div>
+
+    <form class="payment">
+        <div class="form-group">
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" name="customerName">
+        </div>
+
+        <div class="form-group">
+            <label for="customerEmail">Customer Email:</label>
+            <input type="email" id="customerEmail" name="customerEmail">
+        </div>
+
+        <div class="form-group">
+            <label for="shippingAddress">Shipping Address:</label>
+            <textarea id="shippingAddress" name="shippingAddress"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod">
+                <option value="creditCard">Credit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </div>
+        <div class="order-summary">
+            <h3 class="totalPrice">Order Summary:</h3>
+            <p>Shiny Origami Paper (100pc) - $10.10</p>
+            <p>Cherry Blossom Origami Paper (200pc) - $10.30</p>
+            <br>
+            <hr>
+            <br>
+            <p class="totalPrice">Total Price: $20.40<span id="totalPrice"></span></p>
+            <br>
+        </div>
+
+        <div class="self-center flex-1 text-center">
+            <button id="button" name="submit"type="submit" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48">Submit</button>
+        </div> 
+    </form>
+</div>
+ 
 
 
 <footer class="bg-white dark:bg-gray-900">
@@ -182,7 +252,13 @@
       </div>
     </div>
 </footer>
-
+<script>
+    document.getElementById('button').addEventListener('click', function() {
+    alert('Purchase completed! Redirecting to home page.');
+    console.log('Redirecting to index.html...');
+    window.location.href = "index.html"; 
+    })
+  </script>
 
 </body>
 </html>
