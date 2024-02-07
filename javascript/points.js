@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
           alert("You have received 50 points!"); 
           loggedInUser.points = jsondata.points;
           localStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
-          //window.location.href = "tutorial.html";
+          window.location.href = "tutorial.html";
         })
         .catch(error => {
           console.error("Error:", error);
