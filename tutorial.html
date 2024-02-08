@@ -369,8 +369,7 @@
 			</div>
 		</div>
 	</div>
-  
-	</body>
+</body>
 	
 
 <!-- Footer -->
@@ -378,7 +377,7 @@
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" class="flex items-center">
+              <a href="about.html" class="flex items-center">
                   <img src="images/bloopbloopstudio_logo.png" class="h-8 me-3" alt="BloopBloop Studios Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap text-indigo-50">BloopBloop Studios</span>
               </a>
@@ -440,5 +439,24 @@
       </div>
     </div>
 </footer>
+
+<script>
+const dropdownToggle = document.getElementById('dropdown-toggle');
+const dropdownMenu = document.getElementById('dropdown-menu');
+
+// Toggle the 'hidden' class on the dropdown menu when the button is clicked
+  dropdownToggle.addEventListener('click', () => {
+  dropdownMenu.classList.toggle('hidden');
+});
+
+// Close the dropdown menu when clicking outside of it
+document.addEventListener('click', (event) => {
+  if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
+  dropdownMenu.classList.add('hidden');
+  }
+});
+
+
+</script>
 
 </html>
