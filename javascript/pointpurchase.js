@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Order received, please check your email"); 
             loggedInUser.points = currentPoints - 1300; // Update points after successful purchase
             localStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
-            window.location.href = "tutorial.html";
+            window.location.href = "loading.html";
           })
           .catch(error => {
             console.error("Error:", error);

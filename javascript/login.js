@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 localStorage.setItem("loggedInUser", JSON.stringify({username: userID, password: passID, userLogged, id: numID, first: firstID, last: lastID, email: emailID, points: pointsID}));
 
-                window.location.href = "index.html" 
+                window.location.href = "loading.html" 
                 
-                alert(`Logged in as ${userID}`)
+                alert(`Logging in as ${userID}`)
                     
 
             } else {
