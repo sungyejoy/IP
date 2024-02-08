@@ -67,7 +67,7 @@ header {
 
 .title {
     height: 60px;
-    border-bottom: 1px solid #DED5F0;
+    border-bottom: 1px solid #4338CA;
     padding: 20px 30px;
     color: #5E6977;
     font-size: 18px;
@@ -78,7 +78,7 @@ header {
     padding: 20px 30px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #DED5F0;
+    border-bottom: 1px solid #4338CA;
 	width: 100%;
 }
 
@@ -115,6 +115,7 @@ header {
 
 .quantity {
     margin-right: 60px;
+	color: #f0f0f0;
 }
 
 .quantity input {
@@ -211,7 +212,7 @@ button {
   }
 
   hr {
-	border: 1px solid black;
+	border: 1px solid #4338CA;
 	width: 100%;
   }
  
