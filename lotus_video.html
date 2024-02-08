@@ -5,47 +5,41 @@
 	<link rel="stylesheet" type="text/css" href="styles/tutorialstyle.css">
     <link rel="icon" type="image/x-icon" href="images/1x/LogoHeart.png">
 	<script src="https://cdn.tailwindcss.com"></script>
-
+	<script src="javascript/signout.js"></script>
 </head>
+
 <body>
 
 	<!-- Navigation Bar -->
 	<header>
-		<nav class="background-color: #F4F4ED;">
+		<nav id="navbar" class="background-color: #F4F4ED;">
 			<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 			  <div class="relative flex h-16 items-center justify-between">
 				<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-				  <!-- Mobile menu button-->
+
 				  <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
 					<span class="absolute -inset-0.5"></span>
 					<span class="sr-only">Open main menu</span>
-					<!--
-					  Icon when menu is closed.
-		  
-					  Menu open: "hidden", Menu closed: "block"
-					-->
+
 					<svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
 					  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 					</svg>
-					<!--
-					  Icon when menu is open.
-		  
-					  Menu open: "block", Menu closed: "hidden"
-					-->
+
 					<svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
 					  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 					</svg>
 				  </button>
 				</div>
 				<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-				  <div class="flex flex-shrink-0 items-center">
-					<img class="h-15 w-auto" src="images/origame_logo.png" alt="origame">
-				  </div>
+                    <div class="flex flex-shrink-0 items-center">
+                        <a href="index.html">
+                            <img class="h-15 w-auto hover:bg-indigo-500" src="images/origame_logo.png" alt="origame">
+                        </a>
+                    </div>
 				  <div class="hidden sm:ml-6 sm:block">
-					<div class="flex space-x-4">
-					  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-					  <!-- <a href="about.html" class="bg-indigo-600 text-white rounded-md px-3 py-2 text-xl font-medium" aria-current="page">About Us</a> -->
-					  <a href="about.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">About Us</a>
+					<div class="flex space-x-4 mt-4">
+
+					  <a href="about.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">About</a>
 					  <a href="tutorial.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Tutorials</a>
 					  <a href="shop.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Shop</a>
 					  <a href="contact.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Contact Us</a>
@@ -53,54 +47,30 @@
 				  </div>
 				</div>
 				<div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-				  <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-					<span class="absolute -inset-1.5"></span>
-					<span class="sr-only">View notifications</span>
-					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-					  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-					</svg>
-				  </button>
-		  
+
 				  <!-- Profile dropdown -->
 				  <div class="relative ml-3">
 					<div>
-					  <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-						<span class="absolute -inset-1.5"></span>
-						<span class="sr-only">Open user menu</span>
-						<img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Bobby Lee's Profile Pic'">
-					  </button>
-					</div>
-		  
-					<!--
-					  Dropdown menu, show/hide based on menu state.
-		  
-					  Entering: "transition ease-out duration-100"
-						From: "transform opacity-0 scale-95"
-						To: "transform opacity-100 scale-100"
-					  Leaving: "transition ease-in duration-75"
-						From: "transform opacity-100 scale-100"
-						To: "transform opacity-0 scale-95"
-					-->
-					<div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-					  <!-- Active: "bg-gray-100", Not Active: "" -->
-					  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
-					  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
-					  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
-					</div>
+					  <button name="dropdown-toggle" id="dropdown-toggle" class="flex rounded-full bg-gray-800 text-sm focus:outline-none border-none">
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">Open user menu</span>
+              <img class="h-16 w-16 rounded-full object-cover" src="images/profile/profilepic.jpg" alt="Bobby Lee's Profile Pic'">
+            </button>
+            
+            <!-- Add the dropdown menu with a class to control its visibility -->
+            <div name ="dropdown-menu" id="dropdown-menu" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5
+             focus:outline-none hidden" role="menu" aria-labelledby="dropdown-toggle" tabindex="-1">
+              <a href="profile.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Your Profile</a>
+              <a href="rewards.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Rewards</a>
+              <a href="login.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Login</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="user-menu-item-2" onclick="clearLocalStorage()">Sign out</a>
+            </div>
+
 				  </div>
 				</div>
 			  </div>
 			</div>
 		  
-			<!-- Mobile menu, show/hide based on menu state. -->
-			<div class="sm:hidden" id="mobile-menu">
-			  <div class="space-y-1 px-2 pb-3 pt-2">
-				<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-				<a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
-				<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
-				<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
-				<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
-			  </div>
 			</div>
 		  </nav>
 		  
@@ -131,7 +101,7 @@
             <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
-            <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Crane</span>
+            <a href="lotus.html" class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Lotus</a>
             </div>
         </li>
         <li aria-current="page">
@@ -151,11 +121,11 @@
           <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl pb-11">Video Tutorial</h1>
           
           <div class="aspect-video">
-              <iframe class="w-full h-full" width="560" height="315" src="https://www.youtube.com/embed/Ue0dVhO30cw?si=pcFJ6tRm_WNQICph" 
-              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-              web-share" allowfullscreen>
-              </iframe>
+              <iframe class="w-full h-full" width="560" height="315" src="https://www.youtube.com/embed/_6LARdVVFWg?si=KQ9ytlR2p2JDcLQS" title="YouTube video player" 
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
+
+          
       </div>
   </div>
 
@@ -163,14 +133,14 @@
   <!-- Previous & Next Button -->
   <div class="container flex justify-center content-center py-20">
       <!-- Previous Button -->
-      <a href="#" class="flex items-center justify-center px-4 h-10 me-3 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+      <a href="lotus.html" class="flex items-center justify-center px-4 h-10 me-3 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
       <svg class="w-3.5 h-3.5 me-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
       </svg>
       Previous
       </a>
       
-      <a href="crane_end1.html" class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+      <a href="lotus_end.html" class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
       Next
       <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -184,10 +154,10 @@
 
 <!-- Footer -->
 <footer class="bg-indigo-900 dark:bg-gray-900">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div class="md:flex md:justify-between">
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" class="flex items-center">
+            <a href="about.html" class="flex items-center">
                 <img src="images/bloopbloopstudio_logo.png" class="h-8 me-3" alt="BloopBloop Studios Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap text-indigo-50">BloopBloop Studios</span>
             </a>
@@ -235,18 +205,64 @@
         <div class="flex mt-4 sm:justify-center sm:mt-0">
             <a href="#" class="text-gray-300 hover:text-gray-900 dark:hover:text-white">
                 <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
-                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
-                    </svg>
+                      <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                  </svg>
                 <span class="sr-only">Facebook page</span>
             </a>
             <a href="#" class="text-gray-300 hover:text-gray-900 dark:hover:text-white ms-5">
                 <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
-                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
-                </svg>
+                  <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+              </svg>
                 <span class="sr-only">Twitter page</span>
             </a>
         </div>
     </div>
-    </div>
+  </div>
+
 </footer>
+
+<script>
+  const dropdownToggle = document.getElementById('dropdown-toggle');
+  const dropdownMenu = document.getElementById('dropdown-menu');
+
+  // Toggle the 'hidden' class on the dropdown menu when the button is clicked
+  dropdownToggle.addEventListener('click', () => {
+  dropdownMenu.classList.toggle('hidden');
+  });
+
+  // Close the dropdown menu when clicking outside of it
+  document.addEventListener('click', (event) => {
+  if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
+  dropdownMenu.classList.add('hidden');
+  }
+  });
+
+  document.addEventListener("DOMContentLoaded", function () { 
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+if (loggedInUser && loggedInUser.userLogged) {
+  const userName = loggedInUser.username;
+  const email = loggedInUser.email;
+  const points = loggedInUser.points;
+  alert(`Welcome ${userName}, you are logged in`);
+  console.log(userName);
+  console.log(email);
+  console.log(loggedInUser);
+  userID.innerHTML = ` ${userName}`;
+  emailID.innerHTML = `${email}`; 
+  pointsID.innerHTML = `${points}`;
+} else {
+  const confirmLogout = confirm("You are not logged in. Login to view your profile");
+  window.location.href = "login.html";
+}
+  })
+
+  function showModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+</script>
 </html>
