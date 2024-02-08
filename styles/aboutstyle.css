@@ -125,6 +125,7 @@ header {
      margin-left: 5%;
      margin-right: 5%;
     justify-content: right;
+    align-items: center;
      
    }
   
@@ -160,7 +161,7 @@ header {
      margin-left: 5%;
      margin-right: 5%;
     justify-content: left;
-     
+     align-items: center;
    }
   
    .visionimg img{
@@ -183,6 +184,7 @@ header {
      margin-right: 1rem;
      text-align: left;
      width: 40%;
+     align-items: center;
    }
  
    .vision p{
@@ -219,7 +221,6 @@ header {
     justify-content: right;
     text-align: right;
     padding-top: 2rem;
-    border: #ddd 1px solid;
   }
  
   .malcimg{
@@ -269,7 +270,6 @@ header {
 
   .aboutyeji {
     display: flex;
-    border: #ddd 1px solid;
     margin-left: 5%;
     margin-right: 5%;
    justify-content: left;
