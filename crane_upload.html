@@ -269,28 +269,29 @@
 </div>
 <br>
 
-<div class="flex items-stretch ">
+
+<div class="flex items-stretch">
 	<div class="self-center flex-1 text-center">
-		<button id="button" onclick="showModal()" type="submit" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48">Submit</button>
-	</div> 
-</div>
+	  <button id="button" onclick="showModal()" type="submit" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48">Submit</button>
+	  <!-- Modal -->
+	
+	</div>
+  </div>
 
-
-<!-- Modal -->
-<div class="modal-container">
-	<div id="myModal" class="modal">
-		<h2 class="text-center">
-			Congratulations!
-			<br>
+  <div class="modal-container">
+    <div id="myModal" class="modal rounded-lg border-2 ring-indigo-500">
+      <h2 class="text-center text-3xl font-bold pt-10">
+        Congratulations!
+		<br>
 			You've received...
-		</h2>
-		<h1 class="text-center">
-			50 Stars!
-		</h1>
-		<img src="images/1x/happykokoro.png" alt="Kokoro">
-		<button id="claim" onclick="closeModal()" type="submit" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48">Explore other Origami!</button>
-	</div>
-	</div>
+      </h2>
+      <h1 class="text-center pt-3 pb-10">
+        50 Stars!
+      </h1>
+      <img class="w-30 h-50" src="images/1x/happykokoro.png" alt="Kokoro">
+      <button id="claim" onclick="closeModal()" type="submit" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48">Explore other Origami!</button>
+    </div>
+    </div>
 
 	<br>
 	<br>
