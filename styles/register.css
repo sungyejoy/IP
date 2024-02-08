@@ -145,6 +145,13 @@ header {
     text-align: center;
     margin-bottom: 20px;
   }
+  button#dropdown-toggle {
+    background-color: #3949AB; 
+    }
+  
+    button#dropdown-toggle:hover {
+    background-color: #1A237E; 
+    }
     
   
   /* Responsive styles */

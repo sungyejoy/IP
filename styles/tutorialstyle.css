@@ -13,6 +13,13 @@ html, body {
   #navbar {
 	padding: 5px;
 }
+button#dropdown-toggle {
+	background-color: #3949AB; 
+  }
+
+  button#dropdown-toggle:hover {
+	background-color: #1A237E; 
+  }
 
 #navtext {
 	margin-top: 5px;

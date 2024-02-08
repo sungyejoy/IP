@@ -130,7 +130,13 @@ header {
 	background-color: #0056b3;
   }
 
+  button#dropdown-toggle {
+	background-color: #3949AB; 
+  }
 
+  button#dropdown-toggle:hover {
+	background-color: #1A237E; 
+  }
   
   .faq-container {
 	max-width: 600px;
