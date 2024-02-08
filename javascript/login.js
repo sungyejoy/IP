@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const APIKEY = "65994a710b08685b19232be3";
     const APIURL = "https://interactivedev-5e86.restdb.io/rest/register";
 
+
+    // Input of username and password to send to database
     document.getElementById("formsubmitbtn").addEventListener("click", function(e) {
         e.preventDefault();
         console.log('form submitted!')
@@ -19,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
         
+        // Validates if its in database
         .then(response => response.json())
         .then(data => {
             if (data.length > 0 ) {

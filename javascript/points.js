@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("No logged in user found");
         return;
       }
-  
+      
+
+      // Setting variables for database
       const numID = loggedInUser.id;
       const userID = loggedInUser.username;
       const passID = loggedInUser.password;
@@ -36,7 +38,9 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         body: JSON.stringify(jsondata),
       };
-  
+
+
+  // Earn points and change towards database
       fetch(`${APIURL}/${numID}`, settings)
         .then(response => response.json())
         .then(data => {

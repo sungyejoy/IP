@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const APIURL = "https://interactivedev-5e86.restdb.io/rest/image";
     let imgID; 
   
+
+    // Fetch Image from server
     function fetchImage() {
       fetch(`${APIURL}/${imgID}`, { 
         method: "GET",
@@ -33,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   
+    // Input of Image and send to database
     document.getElementById("formsubmitbtn").addEventListener("click", function(e) {
       e.preventDefault();
   

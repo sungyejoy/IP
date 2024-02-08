@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const APIKEY = "65994a710b08685b19232be3";
     const APIURL = "https://interactivedev-5e86.restdb.io/rest/register";
   
+    // Take data from local storage and modify points
     function minusPoints(event) {
       event.preventDefault();
       const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
@@ -9,7 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("No logged in user found");
         return;
       }
-  
+      
+      // Setting variables for database 
       const numID = loggedInUser.id;
       const userID = loggedInUser.username;
       const passID = loggedInUser.password;
@@ -39,7 +41,8 @@ document.addEventListener("DOMContentLoaded", function() {
           },
           body: JSON.stringify(jsondata),
         };
-  
+        
+        // Fetch data to commence modification to data
         fetch(`${APIURL}/${numID}`, settings)
           .then(response => response.json())
           .then(data => {
