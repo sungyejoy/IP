@@ -6,12 +6,12 @@ html {
 	cursor: url("images/1x/cursor.png"), auto;
   }
 
-  html, body {
-    width: 100%;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    
-    }
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: Arial, sans-serif;
+	
+  }
 
   #navbar {
 	padding: 5px;
@@ -272,54 +272,42 @@ header {
  
  
  @media screen and (max-width: 768px) {
-  /* nav ul {
-   display: none;
+  .aboutorigame, .aboutgoals, .aboutvision, .team, .aboutmalc, .aboutyeji {
+    margin-left: 2%;
+    margin-right: 2%;
   }
-  
-  #hamburger-menu {
-   display: block;
-  }
- 
-  .logotext {
-   flex-direction: column;
-    }
 
-    nav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    #nav-links {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    #nav-links li {
-      margin: 0.5rem 0;
-    }
-  
-    #hamburger-menu {
-      display: block;
-    } */
-  
-    main {
-      padding: 1rem;
-    }
-  
-    footer {
-      padding: 0.5rem;
-      margin-top: 0.5rem;
-    }
-  
-    header h1 {
-      font-size: 1.5rem;
-    }
-  
-    .user-icon img {
-      height: 3rem;
-    }
-  
+  .text {
+    width: 100%;
+  }
+
+  .text img {
+    width: 100%;
+  }
+
+  .goalsimg img, .visionimg img {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .goals, .vision {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .malcimg, .yejiimg {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+  }
+
+  .malcom p, .yeji p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
     .aboutus h1 {
       font-size: 2rem;
     }
