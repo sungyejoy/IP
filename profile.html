@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
     <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-	<script src="https://cdn.tailwindcss.com"></script>
+	  <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 <body>
@@ -141,36 +141,44 @@
                     </div>
                   </div>
                 
-
-                <section>
-                  <h2 id="heading" class="text-4xl font-bold mb-4">Badges</h2>
-                  <div class="flex-container">
-                    <div class="gallery-container">
-                      <div class="gallery-item">
-                      <img src="images/badge_icon/icon3.png" class="w-32 rounded-full" alt="Avatar" />
+                  <section>
+                    <h2 id="heading" class="text-4xl font-bold mb-4">Badges</h2>
+                    <div class="flex-container">
+                      <div class="gallery-container">
+                        <div class="gallery-item">
+                          <img src="images/badge_icon/icon3.png" class="w-32 rounded-full" alt="Avatar" onclick="showModal()">
+                        </div>
+                        <div class="gallery-item2">
+                          <a href="tutorial.html">
+                            <img src="images/badge_icon/icon2.png" class="w-32 rounded-full" alt="Avatar">
+                          </a>
+                        </div>
+                        <a href="tutorial.html">
+                        <div class="gallery-item2">
+                          <img src="images/badge_icon/icon1.png" class="w-32 rounded-full" alt="Avatar">
+                        </a>
+                        </div>
                       </div>
-                      <div class="gallery-item">
-                        <img src="images/badge_icon/icon2.png" class="w-32 rounded-full" alt="Avatar" />
-                      </div>
-                      <!-- Add more gallery items as needed -->
-                      <div class="gallery-item">
-                        <img src="images/badge_icon/icon1.png" class="w-32 rounded-full" alt="Avatar" />
+                      <div class="gallery-container">
+                        <div class="gallery-item">
+                          <a href="tutorial.html">
+                            <img src="images/badge_icon/icon2.png" class="w-32 rounded-full" alt="Avatar" onclick="showModal()">
+                          </a>
+                        </div>
+                        <div class="gallery-item2">
+                          <a href="tutorial.html">
+                          <img src="images/badge_icon/icon1.png" class="w-32 rounded-full" alt="Avatar">
+                        </a>
+                        </div>
+                        <div class="gallery-item2">
+                          <a href="tutorial.html"></a>
+                          <img src="images/badge_icon/icon3.png" class="w-32 rounded-full" alt="Avatar">
+                        </a>
+                        </div>
                       </div>
                     </div>
-                    <div class="gallery-container">
-                      <div class="gallery-item">
-                        <img src="images/badge_icon/icon2.png" class="w-32 rounded-full" alt="Avatar" />
-                      </div>
-                      <div class="gallery-item">
-                        <img src="images/badge_icon/icon1.png" class="w-32 rounded-full" alt="Avatar" />
-                      </div>
-                      <!-- Add more gallery items as needed -->
-                      <div class="gallery-item">
-                        <img src="images/badge_icon/icon3.png" class="w-32 rounded-full" alt="Avatar" />
-                      </div>
-                    </div>
-                  </div>
-                </section>
+                  </section>
+                  
 
                 <div class="header-container">
                   <h2>Origami Gallery</h2>
@@ -195,12 +203,52 @@
                   <a href="tutorial.html">
                     <img src="images/origami/cat.jpg" alt="Image 6">
                   </a>
-                  <!-- Add more images as needed -->
                 </div>
               </div>
-              
-            </div>
-          </div>
+              <div class="modal-container">
+                <div id="myModal" class="modal">
+                  <h2 class="text-center">
+                    Congratulations!
+                    <br>
+                    You've received...
+                  </h2>
+                  <h1 class="text-center">
+                    50 Stars!
+                  </h1>
+                  <img src="images/1x/happykokoro.png">
+                  <button onclick="closeModal()" type="submit" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48">Close</button>
+                </div>
+                </div>
+
+              </div>
+              </div>
+              <section class="collection">
+                <div class="header-collection">
+                  <h2>Collections</h2>
+                </div>
+                <br>
+                <div class="flex-collection">
+                  <a href="tutorial.html">
+                    <img src="images/origami/bluebell flower.jpg" alt="Image 1">
+                  </a>
+                  <a href="tutorial.html">
+                    <img src="images/origami/fox.jpg" alt="Image 2">
+                  </a>
+                  <a href="crane.html">
+                    <img src="images/origami/crane.jpg" alt="Image 3">
+                  </a>
+                  <a href="tutorial.html">
+                    <img src="images/origami/butterfly.jpg" alt="Image 4">
+                  </a>
+                  <a href="tutorial.html">
+                    <img src="images/origami/simpleflower.jpg" alt="Image 5">
+                  </a>
+                  <a href="tutorial.html">
+                    <img src="images/origami/cat.jpg" alt="Image 6">
+                  </a>
+                </div>
+              </section>
+
 
 		
 		
@@ -313,5 +361,14 @@ if (loggedInUser && loggedInUser.userLogged) {
   })
 
 </script>
+<script>
+  function showModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  </script>
 </body>
 </html>
