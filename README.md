@@ -63,10 +63,29 @@ As a child using OrigaME!, they would want something exciting and amusing to cap
 
 ### Javascript 
 1. Dropdown buttons
-2. 
+2. Contact Submit Button
+3. Loading/Lottie page
+4. Login page
+5. Local Storage to store user logins
+6. Clear local storage for sign out
+7. Registration page
+8. Navigation through buttons
+9. Modals
+10. 3D viewer pop ups
+11. Point addition to system
+12. Point deduction from system
+13. Apply database statistics to local text
+14. Image upload
 
 ### API 
 1. Dropdown buttons
+2. Contact page
+3. Image upload
+4. Registration
+5. Login through same registry
+6. Point system
+7. Addition and Subtraction of points
+
 
 
 ### Features Left to Implement
