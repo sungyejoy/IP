@@ -187,6 +187,7 @@ header {
     button#dropdown-toggle:hover {
     background-color: #1A237E; 
     }
+
    .aboutmalc {
     display: flex;
     margin-left: 5%;
@@ -198,14 +199,14 @@ header {
   }
  
   .malcimg{
-  margin: 2%;
-  width: 10rem;
-  height: 10rem; 
-  border-radius: 50%;
-  overflow: hidden; 
+    margin: 2%;
+    width: 10rem;
+    height: 10rem; 
+    border-radius: 50%;
+    overflow: hidden; 
+    
+  }
   
-}
-
 
 .yejiimg{
   margin: 2%;
@@ -216,7 +217,11 @@ header {
   
 }
 
-
+.malcimg img, .yejiimg img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+} 
 
 .malcom p{
   margin-left: 50%;
