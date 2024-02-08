@@ -6,6 +6,7 @@
     <link rel="icon" type="image/x-icon" href="images/1x/LogoHeart.png">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script src="javascript/signout.js"></script>
+    <script src="javascript/pointpurchase.js"></script>
 </head>
 <body>
 
@@ -131,11 +132,12 @@
             <!-- Options -->
             <div class="mt-4 lg:row-span-3 lg:mt-0">
             <h2 class="sr-only">Product information</h2>
-            <div>
-                <p class="text-sm font-medium text-gray-900">1300</p>
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+            <div class="pointsneeded">
+                <svg class="w-6 h-6 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                     <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                </svg>
+                  </svg>
+                  <p class="text-m font-medium text-gray-900">1300</p>
+                
             </div>
     
             <!-- Reviews -->
@@ -164,11 +166,28 @@
                 <a href="#" class="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">51 reviews</a>
                 </div>
             </div>
-    
-              <a href="cart.html" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-              <button type="submit">Add to bag</button>
-              </a>
-            </form>
+            <form>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                <br>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                <br>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+                <br>
+                <label for="zip">ZIP Code:</label>
+                <input type="text" id="zip" name="zip" required>
+                <br>
+                <div class="flex items-center justify-between">
+                  <label for="saveInfo">Save information:</label>
+                  <input type="checkbox" id="saveInfo" name="saveInfo">
+                </div>
+                <br>
+                <a class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                  <button id="purchase" type="submit">Redeem</button>
+                </a>
+              </form>
             </div>
     
             <div class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pb-16 lg:pr-8 lg:pt-6">
