@@ -485,7 +485,40 @@ form {
 	margin-left: auto;
 	margin-right: auto;
   }
+
+  .modal-container2 img{
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+  }
   
+  .modal-container3 img{
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+  .modal-container4 img{
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+  .modal-container5 img{
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+  .modal-container6 img{
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+  .badges {
+	margin-top: 15%
+  }
 /* Card Carousell */
   @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
   
@@ -565,6 +598,7 @@ form {
 	width: 70%; 
 	height: 80%; 
   }
+
 
   #image-container {
 	margin-top: 20px;

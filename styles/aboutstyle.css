@@ -6,12 +6,12 @@ html {
 	cursor: url("images/1x/cursor.png"), auto;
   }
 
-html, body {
-	width: 100%;
-	height: 100%;
-	font-family: Arial, sans-serif;
-	
-  }
+  html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    
+    }
 
   #navbar {
 	padding: 5px;

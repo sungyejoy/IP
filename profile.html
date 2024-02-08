@@ -96,10 +96,9 @@
           <div>
             <dt class="font-medium text-gray-900">5</dt>
             <dd class="mt-1 text-sm text-gray-500">Followings</dd> <!-- Adjusted margin -->
-          </div>
+          </div>     
         </dl>
         <br>
-        <hr class="line">
         <br>
         <div class="points-container">
           <h2 class="text-2xl font-medium leading-tight">
@@ -107,9 +106,11 @@
             <span id="pointsID" class="inline-block whitespace-nowrap rounded-[0.27rem] bg-primary-100 px-[0.65em] pb-[0.25em] pt-[0.35em] text-center align-baseline text-[1em] font-bold leading-none text-primary-700"></span>
           </h2>
         </div>
+        <hr class="line">
+        <br>
       </div>
     
-      <section>
+      <section class="badges">
         <h2 id="heading" class="text-4xl font-bold mb-4">Badges</h2>
         <div class="flex-container">
           <div class="gallery-container">
@@ -118,27 +119,32 @@
             </div>
             <br>
             <div class="gallery-item2">
-                <img src="images/badge_icon/icon6.png" class="w-32 rounded-full" alt="10 Tutorial Achiever">
+                <img src="images/badge_icon/icon6.png" class="w-32 rounded-full" alt="10 Tutorial Achiever" onclick="showModal3()">
             </div>
             <br>
             <div class="gallery-item2">
-              <img src="images/badge_icon/icon2.png" class="w-32 rounded-full" alt="Trophy">
+              <img src="images/badge_icon/icon2.png" class="w-32 rounded-full" alt="Trophy" onclick="showModal5()">
             </div>
           </div>
           <br>
           <div class="gallery-container">
             <div class="gallery-item">
-                <img src="images/badge_icon/icon4.png" class="w-32 rounded-full" alt="5 Tutorial Achiever" onclick="showModal()">
+                <img src="images/badge_icon/icon4.png" class="w-32 rounded-full" alt="5 Tutorial Achiever" onclick="showModal2()">
             </div>
             <br>
             <div class="gallery-item2">
-              <img src="images/badge_icon/icon5.png" class="w-32 rounded-full" alt="Checklist">
+              <img src="images/badge_icon/icon5.png" class="w-32 rounded-full" alt="Checklist" onclick="showModal4()">
             </div>
             <br>
             <div class="gallery-item2">
-              <img src="images/badge_icon/icon3.png" class="w-32 rounded-full" alt="Thumbs up">
+              <img src="images/badge_icon/icon3.png" class="w-32 rounded-full" alt="Thumbs up" onclick="showModal6()"> 
             </div>
           </div>
+        </div>
+        <div class="text-center mt-9">
+          <button class="bg-indigo-600 hover:bg-indigo-900 text-white font-bold py-2 px-5 rounded">
+            See More
+          </button>
         </div>
       </section>
       
@@ -185,6 +191,76 @@
       rounded-lg p-4 text-center p-30">Close</button>
     </div>
     </div>
+
+    <div class="modal-container2">
+      <div id="myModal2" class="modal rounded-lg border-2 ring-indigo-500">
+        <h2 class="text-center text-3xl font-bold pt-10">
+          5 Tutorial Achiever!
+        </h2>
+        <h1 class="text-center pt-3 pb-10">
+          Completes 5 Tutorials
+        </h1>
+        <img class="w-30 h-50" src="images/badge_icon/yes_5_2.png" alt="Badge">
+        <button onclick="closeModal2()" type="button" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white 
+        rounded-lg p-4 text-center p-30">Close</button>
+      </div>
+      </div>
+
+      <div class="modal-container3">
+        <div id="myModal3" class="modal rounded-lg border-2 ring-indigo-500">
+          <h2 class="text-center text-3xl font-bold pt-10">
+            5 Tutorial Achiever!
+          </h2>
+          <h1 class="text-center pt-3 pb-10">
+            Completes 5 Tutorials
+          </h1>
+          <img class="w-30 h-50" src="images/badge_icon/yes_5_2.png" alt="Badge">
+          <button onclick="closeModal3()" type="button" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white 
+          rounded-lg p-4 text-center p-30">Close</button>
+        </div>
+        </div>
+
+        <div class="modal-container4">
+          <div id="myModal4" class="modal rounded-lg border-2 ring-indigo-500">
+            <h2 class="text-center text-3xl font-bold pt-10">
+              5 Tutorial Achiever!
+            </h2>
+            <h1 class="text-center pt-3 pb-10">
+              Completes 5 Tutorials
+            </h1>
+            <img class="w-30 h-50" src="images/badge_icon/yes_5_2.png" alt="Badge">
+            <button onclick="closeModal4()" type="button" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white 
+            rounded-lg p-4 text-center p-30">Close</button>
+          </div>
+          </div>
+
+          <div class="modal-container5">
+            <div id="myModal5" class="modal rounded-lg border-2 ring-indigo-500">
+              <h2 class="text-center text-3xl font-bold pt-10">
+                5 Tutorial Achiever!
+              </h2>
+              <h1 class="text-center pt-3 pb-10">
+                Completes 5 Tutorials
+              </h1>
+              <img class="w-30 h-50" src="images/badge_icon/yes_5_2.png" alt="Badge">
+              <button onclick="closeModal5()" type="button" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white 
+              rounded-lg p-4 text-center p-30">Close</button>
+            </div>
+            </div>
+
+            <div class="modal-container6">
+              <div id="myModal6" class="modal rounded-lg border-2 ring-indigo-500">
+                <h2 class="text-center text-3xl font-bold pt-10">
+                  5 Tutorial Achiever!
+                </h2>
+                <h1 class="text-center pt-3 pb-10">
+                  Completes 5 Tutorials
+                </h1>
+                <img class="w-30 h-50" src="images/badge_icon/yes_5_2.png" alt="Badge">
+                <button onclick="closeModal6()" type="button" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white 
+                rounded-lg p-4 text-center p-30">Close</button>
+              </div>
+              </div>
 
   </div>
   </div>
@@ -302,6 +378,42 @@ if (loggedInUser && loggedInUser.userLogged) {
 
   function closeModal() {
     document.getElementById("myModal").style.display = "none";
+  }
+
+  function showModal2() {
+    document.getElementById("myModal2").style.display = "block";
+  }
+
+  function closeModal2() {
+    document.getElementById("myModal2").style.display = "none";
+  }
+  function showModal3() {
+    document.getElementById("myModal3").style.display = "block";
+  }
+
+  function closeModal3() {
+    document.getElementById("myModal3").style.display = "none";
+  }
+  function showModal4() {
+    document.getElementById("myModal4").style.display = "block";
+  }
+
+  function closeModal4() {
+    document.getElementById("myModal4").style.display = "none";
+  }
+  function showModal5() {
+    document.getElementById("myModal5").style.display = "block";
+  }
+
+  function closeModal5() {
+    document.getElementById("myModal5").style.display = "none";
+  }
+  function showModal6() {
+    document.getElementById("myModal6").style.display = "block";
+  }
+
+  function closeModal6() {
+    document.getElementById("myModal6").style.display = "none";
   }
 </script>
 
