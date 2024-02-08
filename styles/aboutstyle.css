@@ -23,7 +23,24 @@ html, body {
   #navbar {
 	padding: 5px;
 }
+.team h1{
+  font-weight: bold;
+}
+.vision h2{
+  font-weight: bold;
+}
 
+.malcom h2{
+  font-weight: bold;
+}
+
+.yeji h2{
+  font-weight: bold;
+}
+
+.goals h2{
+  font-weight: bold;
+}
 #navtext {
 	margin-top: 5px;
 }
@@ -57,9 +74,10 @@ header {
 
 
   .aboutus h1 {
-    color: #6e657e;
+    color: #1A237E;
     font-size: 4rem;
     text-align: center;
+    font-weight: bold;
   }
  
  
@@ -104,7 +122,6 @@ header {
  
    .aboutgoals {
      display: flex;
-     /* border: #ddd 1px solid; */
      margin-left: 5%;
      margin-right: 5%;
     justify-content: right;
@@ -130,7 +147,7 @@ header {
  
    .goals h2{
      font-size: 2rem;
-     color: #6e657e;;
+     color: #1A237E;
    }
  
    .goals p{
@@ -156,7 +173,7 @@ header {
  
    .vision h2{
     font-size: 2rem;
-    color: #6e657e;
+    color: #1A237E;
    }
    
    .vision {
@@ -184,7 +201,7 @@ header {
      justify-content: center;
      font-size: 3rem;
      text-align: center;
-     color: #383146;
+     color: #1A237E;
      margin: auto;
    }
    button#dropdown-toggle {
