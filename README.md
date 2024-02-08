@@ -86,7 +86,8 @@ As a child using OrigaME!, they would want something exciting and amusing to cap
 6. Point system
 7. Addition and Subtraction of points
 
-
+### Lottie
+1. 
 
 ### Features Left to Implement
 - Light & Dark mode - To let children use the app at night, to avoid straining their eyes. 
