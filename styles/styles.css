@@ -12,6 +12,14 @@ html, body {
 	
   }
 
+  button#dropdown-toggle {
+	background-color: #3949AB; 
+  }
+
+  button#dropdown-toggle:hover {
+	background-color: #1A237E; 
+  }
+
   #navbar {
 	padding: 5px;
 }
@@ -215,20 +223,18 @@ header {
 
   .flex-container {
 	display: flex;
-	gap: 20px; /* Add gap between gallery containers */
+	gap: 25px; /* Add gap between gallery containers */
 	margin-left: 15%;
 	align-items: center;
   }
 
   .flex-container img {
 	width: 100%;
-	border-radius: 8px;
 	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
   
   .flex-container img:hover {
 	transform: scale(1.1); /* Increase the size of the image */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow */
   }
 
   .flex-gallery {
