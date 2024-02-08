@@ -10,171 +10,168 @@
 </head>
 <body>
 
-	<!-- Navigation Bar -->
-	<header>
-		<nav id="navbar" class="background-color: #F4F4ED;">
-			<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-			  <div class="relative flex h-16 items-center justify-between">
-				<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+<!-- Navigation Bar -->
+<header>
+	<nav id="navbar" class="background-color: #F4F4ED;">
+		<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+			<div class="relative flex h-16 items-center justify-between">
+			<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
 
-				  <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-					<span class="absolute -inset-0.5"></span>
-					<span class="sr-only">Open main menu</span>
+				<button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+				<span class="absolute -inset-0.5"></span>
+				<span class="sr-only">Open main menu</span>
 
-					<svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-					  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-					</svg>
+				<svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+				</svg>
 
-					<svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-					  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-					</svg>
-				  </button>
-				</div>
-				<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                    <div class="flex flex-shrink-0 items-center">
-                        <a href="index.html">
-                            <img class="h-15 w-auto hover:bg-indigo-500" src="images/origame_logo.png" alt="Your Company">
-                        </a>
-                    </div>
-				  <div class="hidden sm:ml-6 sm:block">
-					<div class="flex space-x-4 mt-4">
-
-					  <a href="about.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">About</a>
-					  <a href="tutorial.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Tutorials</a>
-					  <a href="shop.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Shop</a>
-					  <a href="contact.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Contact Us</a>
-					</div>
-				  </div>
-				</div>
-				<div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-
-				  <!-- Profile dropdown -->
-				  <div class="relative ml-3">
-					<div>
-					  <button name="dropdown-toggle" id="dropdown-toggle" class="flex rounded-full bg-gray-800 text-sm focus:outline-none border-none">
-              <span class="absolute -inset-1.5"></span>
-              <span class="sr-only">Open user menu</span>
-              <img class="h-16 w-16 rounded-full object-cover" src="images/profile/profilepic.jpg" alt="">
-            </button>
-            
-            <!-- Add the dropdown menu with a class to control its visibility -->
-            <div name ="dropdown-menu" id="dropdown-menu" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5
-             focus:outline-none hidden" role="menu" aria-labelledby="dropdown-toggle" tabindex="-1">
-              <a href="profile.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Your Profile</a>
-              <a href="rewards.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Rewards</a>
-              <a href="login.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Login</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="user-menu-item-2" onclick="clearLocalStorage()">Sign out</a>
-            </div>
-
-				  </div>
-				</div>
-			  </div>
+				<svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+				</svg>
+				</button>
 			</div>
-		  
+			<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+				<div class="flex flex-shrink-0 items-center">
+					<a href="index.html">
+						<img class="h-15 w-auto hover:bg-indigo-500" src="images/origame_logo.png" alt="Your Company">
+					</a>
+				</div>
+				<div class="hidden sm:ml-6 sm:block">
+				<div class="flex space-x-4 mt-4">
+
+					<a href="about.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">About</a>
+					<a href="tutorial.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Tutorials</a>
+					<a href="shop.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Shop</a>
+					<a href="contact.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Contact Us</a>
+				</div>
+				</div>
 			</div>
-		  </nav>
-		  
-	</header>
+			<div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+				<!-- Profile dropdown -->
+				<div class="relative ml-3">
+				<div>
+					<button name="dropdown-toggle" id="dropdown-toggle" class="flex rounded-full bg-gray-800 text-sm focus:outline-none border-none">
+			<span class="absolute -inset-1.5"></span>
+			<span class="sr-only">Open user menu</span>
+			<img class="h-16 w-16 rounded-full object-cover" src="images/profile/profilepic.jpg" alt="">
+		</button>
+		
+		<!-- Add the dropdown menu with a class to control its visibility -->
+		<div name ="dropdown-menu" id="dropdown-menu" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5
+			focus:outline-none hidden" role="menu" aria-labelledby="dropdown-toggle" tabindex="-1">
+			<a href="profile.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Your Profile</a>
+			<a href="rewards.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Rewards</a>
+			<a href="login.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Login</a>
+			<a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="user-menu-item-2" onclick="clearLocalStorage()">Sign out</a>
+		</div>
+
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		</div>
+		</nav>
+		
+</header>
 
 
 <br>
 <br>
 <br>
 
-	<!-- Contact Us -->
-	<!-- <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
-	  <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-	</div> -->
-	<div class="mx-auto max-w-2xl text-center">
-	  <h2 class="text-3xl font-bold tracking-tight text-indigo-700 sm:text-4xl">Contact Us!</h2>
-	  <p class="mt-2 text-lg leading-8 text-gray-600">Send us a message! We will get back to you asap!</p>
+<!-- Contact Us -->
+<div class="mx-auto max-w-2xl text-center">
+	<h2 class="text-3xl font-bold tracking-tight text-indigo-700 sm:text-4xl">Contact Us!</h2>
+	<p class="mt-2 text-lg leading-8 text-gray-600">Send us a message! We will get back to you asap!</p>
+</div>
+<form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+	<div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+	<div class="sm:col-span-2">
+		<label for="company" class="block text-sm font-semibold leading-6 text-indigo-700">Name</label>
+		<div class="mt-2.5">
+		<input type="text" name="name" id="name" autocomplete="name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+		</div>
 	</div>
-	<form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
-	  <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-		<div class="sm:col-span-2">
-		  <label for="company" class="block text-sm font-semibold leading-6 text-indigo-700">Name</label>
-		  <div class="mt-2.5">
-			<input type="text" name="name" id="name" autocomplete="name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-		  </div>
+	<div class="sm:col-span-2">
+		<label for="email" class="block text-sm font-semibold leading-6 text-indigo-700">Email</label>
+		<div class="mt-2.5">
+		<input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
 		</div>
-		<div class="sm:col-span-2">
-		  <label for="email" class="block text-sm font-semibold leading-6 text-indigo-700">Email</label>
-		  <div class="mt-2.5">
-			<input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-		  </div>
+	</div>
+	<div class="sm:col-span-2">
+		<label for="subj" class="block text-sm font-semibold leading-6 text-indigo-700">Subject</label>
+		<div class="mt-2.5">
+			<input type="text" name="subj" id="subj" autocomplete="subj" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
 		</div>
-		<div class="sm:col-span-2">
-			<label for="subj" class="block text-sm font-semibold leading-6 text-indigo-700">Subject</label>
-			<div class="mt-2.5">
-			  <input type="text" name="subj" id="subj" autocomplete="subj" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-			</div>
-			  <svg class="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-				<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-			  </svg>
+			<svg class="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+			<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+			</svg>
+	</div>
+	<div class="sm:col-span-2">
+		<label for="message" class="block text-sm font-semibold leading-6 text-indigo-700">Message</label>
+		<div class="mt-2.5">
+		<textarea name="msg" id="msg" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 
+		placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">Start typing here...</textarea>
 		</div>
-		<div class="sm:col-span-2">
-		  <label for="message" class="block text-sm font-semibold leading-6 text-indigo-700">Message</label>
-		  <div class="mt-2.5">
-			<textarea name="msg" id="msg" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 
-			placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">Start typing here...</textarea>
-		  </div>
+	</div>
+	<div class="flex gap-x-4 sm:col-span-2">
+		<div class="flex h-6 items-center">
+		<!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
+		<button type="button" class="bg-gray-200 flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" role="switch" aria-checked="false" aria-labelledby="switch-1-label">
+			<span class="sr-only">Agree to policies</span>
+			<!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" -->
+			<span aria-hidden="true" class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
+			</button>
 		</div>
-		<div class="flex gap-x-4 sm:col-span-2">
-		  <div class="flex h-6 items-center">
-			<!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
-			<button type="button" class="bg-gray-200 flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" role="switch" aria-checked="false" aria-labelledby="switch-1-label">
-				<span class="sr-only">Agree to policies</span>
-				<!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" -->
-				<span aria-hidden="true" class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
-			  </button>
-		  </div>
-		  <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
-			By selecting this, you agree to our
-			<a href="#" class="font-semibold text-indigo-600">privacy&nbsp;policy</a>.
-		  </label>
-		</div>
-	  </div>
-	  <div class="mt-10">
-		<button type="submit" id="formsubmitbtn" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold
-		 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
-	  </div>
-	</form>
-  
+		<label class="text-sm leading-6 text-gray-600" id="switch-1-label">
+		By selecting this, you agree to our
+		<a href="#" class="font-semibold text-indigo-600">privacy&nbsp;policy</a>.
+		</label>
+	</div>
+	</div>
+	<div class="mt-10">
+	<button type="submit" id="formsubmitbtn" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold
+		text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
+	</div>
+</form>
 
-	  <br>
-	  <br>
-	  <br>
 
-	  <div class="faq-container pb-">
-		<h1 class="text-indigo-700">FAQ</h1>
-		<br>
-		<details>
-		  <summary class="text-indigo-700">I am having issues with my account</summary>
-		  <p>Please ensure that the username and password used are correct. <br>If you are having trouble logging in, 
-			please email origame@gmail.com for further assistance.
+<br>
+<br>
+<br>
 
-		  </p>
-		</details>
-		<details>
-		  <summary  class="text-indigo-700">How does the point system work?</summary>
-		  <p>Points are earned per completion of each tutorial or challenges!<br> Make sure to collect as much points as possible as you can redeem it for rewards through this 
-			<a href="rewards.html">page!</a></p>
-		</details>
-		<details>
-			<summary  class="text-indigo-700">Will points expire?</summary>
-			<p>Yes! <br>Points expire with a duration of 1 year from the time you earned it, so make sure to use them up!
-		</details>
-		<details>
-			<summary  class="text-indigo-700">I want to make a return for the items I have purchased.</summary>
-			<p>We're so sorry to hear that, please email origame@gmail.com to make your return.</p>
-		</details>
-		<details>
-			<summary  class="text-indigo-700" >What is OrigaME?</summary>
-			<p>OrigaME! aims to spread the joy of creating origami through gamified system of exchanging points for rewards.<br>
-				For more information, you can check out our <a href="about.html">About page</a> or drop us a message! <br>We will get back to you ASAP!
-			</p>
-		</details>
-	  </div>
+<div class="faq-container pb-20">
+	<h1 class="text-indigo-700">FAQ</h1>
+	<br>
+	<details>
+		<summary class="text-indigo-700">I am having issues with my account</summary>
+		<p>Please ensure that the username and password used are correct. <br>If you are having trouble logging in, 
+		please email origame@gmail.com for further assistance.
+
+		</p>
+	</details>
+	<details>
+		<summary  class="text-indigo-700">How does the point system work?</summary>
+		<p>Points are earned per completion of each tutorial or challenges!<br> Make sure to collect as much points as possible as you can redeem it for rewards through this 
+		<a href="rewards.html">page!</a></p>
+	</details>
+	<details>
+		<summary  class="text-indigo-700">Will points expire?</summary>
+		<p>Yes! <br>Points expire with a duration of 1 year from the time you earned it, so make sure to use them up!
+	</details>
+	<details>
+		<summary  class="text-indigo-700">I want to make a return for the items I have purchased.</summary>
+		<p>We're so sorry to hear that, please email origame@gmail.com to make your return.</p>
+	</details>
+	<details>
+		<summary  class="text-indigo-700" >What is OrigaME?</summary>
+		<p>OrigaME! aims to spread the joy of creating origami through gamified system of exchanging points for rewards.<br>
+			For more information, you can check out our <a href="about.html">About page</a> or drop us a message! <br>We will get back to you ASAP!
+		</p>
+	</details>
+</div>
 
 </body>
 
