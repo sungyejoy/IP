@@ -158,23 +158,27 @@
     </div>
 </footer>
 <script>
-const dropdownToggle = document.getElementById('dropdown-toggle');
-const dropdownMenu = document.getElementById('dropdown-menu');
+	document.addEventListener("DOMContentLoaded", function () { 
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
-// Toggle the 'hidden' class on the dropdown menu when the button is clicked
-  dropdownToggle.addEventListener('click', () => {
-  dropdownMenu.classList.toggle('hidden');
-});
-
-// Close the dropdown menu when clicking outside of it
-document.addEventListener('click', (event) => {
-  if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
-  dropdownMenu.classList.add('hidden');
-  }
-});
-
-
+if (loggedInUser && loggedInUser.userLogged) {
+  const userName = loggedInUser.username;
+  const email = loggedInUser.email;
+  const points = loggedInUser.points;
+  alert(`Welcome ${userName}, you are logged in`);
+  console.log(userName);
+  console.log(email);
+  console.log(loggedInUser);
+  userID.innerHTML = ` ${userName}`;
+  emailID.innerHTML = `${email}`; 
+  pointsID.innerHTML = `${points}`;
+} else {
+  const confirmLogout = confirm("You are not logged in. Login to view tutorials");
+  window.location.href = "login.html";
+}
+  })
 </script>
+
 
 </html>
 

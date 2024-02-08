@@ -313,7 +313,25 @@ document.addEventListener('click', (event) => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () { 
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
+if (loggedInUser && loggedInUser.userLogged) {
+  const userName = loggedInUser.username;
+  const email = loggedInUser.email;
+  const points = loggedInUser.points;
+  alert(`Welcome ${userName}, you are logged in`);
+  console.log(userName);
+  console.log(email);
+  console.log(loggedInUser);
+  userID.innerHTML = ` ${userName}`;
+  emailID.innerHTML = `${email}`; 
+  pointsID.innerHTML = `${points}`;
+} else {
+  const confirmLogout = confirm("You are not logged in. Login to redeem your rewards");
+  window.location.href = "login.html";
+}
+  })
 </script>
 
 </html>
