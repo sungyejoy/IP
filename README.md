@@ -87,7 +87,8 @@ As a child using OrigaME!, they would want something exciting and amusing to cap
 7. Addition and Subtraction of points
 
 ### Lottie
-1. 
+- Created a loading page to create better visuals and showcases fluency in navigation while data loads into the databases
+- Makes use of the slow down time that PUTTING,GETTING or Fetching data has to show animations
 
 ### Features Left to Implement
 - Light & Dark mode - To let children use the app at night, to avoid straining their eyes. 
