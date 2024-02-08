@@ -55,10 +55,10 @@ header {
   .shopping-cart {
     width: 60%;
     height: auto;
-    background: #FFFFFF;
+    /* background: #FFFFFF;
     box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
     border-radius: 4%;
-	border: 1px solid #DED5F0;
+	border: 1px solid #DED5F0; */
     display: flex;
     flex-direction: column;
 	margin-left: auto;
@@ -129,7 +129,7 @@ header {
 button[class*=btn] {
     width: 30px;
     height: 30px;
-    background-color: #DED5F0;
+    background-color: #4338CA;
     border-radius: 6px;
     border: none;
     cursor: pointer;
@@ -143,11 +143,6 @@ button[class*=btn] {
     margin-top: 2px;
 }
 
-button:focus,
-input:focus {
-	border: 1px solid #DED5F0;
-}
-
 .total-price {
     text-align: center;
     font-size: 16px;
@@ -158,10 +153,10 @@ input:focus {
 	width: 20%;
 	height:100%;
 	padding: 40px;
-	background-color: white;
-	border: 2px solid #DED5F0;
-	border-radius: 8%;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	/* background-color: white;
+	border: 2px solid #DED5F0; */
+	/* border-radius: 8%; */
+	/* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 	margin-right: auto;
 	margin-top: auto;
 }
@@ -204,7 +199,7 @@ select {
 button {
 	padding: 10px 20px; /* Add padding for spacing */
 	font-size: 16px; /* Set font size */
-	background-color: #4caf50; /* Set background color */
+	background-color: #6366F1; /* Set background color */
 	color: white; /* Set text color */
 	border: none; /* Remove border */
 	border-radius: 5px; /* Add border radius for rounded corners */
@@ -212,7 +207,7 @@ button {
   }
   
   button:hover {
-	background-color: #45a049; /* Change background color on hover */
+	background-color: #6366F1; /* Change background color on hover */
   }
 
   hr {
