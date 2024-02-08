@@ -55,17 +55,19 @@ header {
   .shopping-cart {
     width: 60%;
     height: auto;
-    margin: 80px auto;
     background: #FFFFFF;
     box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
-    border-radius: 6px;
+    border-radius: 4%;
+	border: 1px solid #DED5F0;
     display: flex;
     flex-direction: column;
+	margin-left: auto;
+	
 }
 
 .title {
     height: 60px;
-    border-bottom: 1px solid #E1E8EE;
+    border-bottom: 1px solid #DED5F0;
     padding: 20px 30px;
     color: #5E6977;
     font-size: 18px;
@@ -127,7 +129,7 @@ header {
 button[class*=btn] {
     width: 30px;
     height: 30px;
-    background-color: #E1E8EE;
+    background-color: #DED5F0;
     border-radius: 6px;
     border: none;
     cursor: pointer;
@@ -143,24 +145,25 @@ button[class*=btn] {
 
 button:focus,
 input:focus {
-    outline: 0;
+	border: 1px solid #DED5F0;
 }
 
 .total-price {
     text-align: center;
     font-size: 16px;
-    color: #43484D;
     font-weight: 300;
 }
 
 .checkout-container {
-	width: 500px;
-	margin: 0 auto;
-	padding: 20px;
+	width: 20%;
+	height:100%;
+	padding: 40px;
 	background-color: white;
-	border: 1px solid #ddd;
-	border-radius: 4px;
+	border: 2px solid #DED5F0;
+	border-radius: 8%;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-right: auto;
+	margin-top: auto;
 }
 .logo {
 	text-align: center;
@@ -217,6 +220,9 @@ button {
 	width: 100%;
   }
  
+  .flex {
+	display: flex;
+  }
 
 @media screen and (max-width: 768px) {
 	.shopping-cart {
