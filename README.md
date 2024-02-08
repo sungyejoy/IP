@@ -1,5 +1,7 @@
-# IP | OrigaME@
-By: Yeji and Malcom
+# OrigaME!
+Sung Yeji | S10225093
+Malcom Goh | S10262073
+IM01
 
 # Integrated Studio Project - Bloop Bloop Studios
 
