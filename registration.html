@@ -8,6 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="javascript/signout.js"></script>
 </head>
+
 <body>
 
   <!-- Navigation Bar -->
@@ -58,7 +59,7 @@
             </button>
             
             <!-- Add the dropdown menu with a class to control its visibility -->
-            <div name ="dropdown-menu" id="dropdown-menu" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5
+            <div  id="dropdown-menu" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5
               focus:outline-none hidden" role="menu" aria-labelledby="dropdown-toggle" tabindex="-1">
               <a href="profile.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Your Profile</a>
               <a href="rewards.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Rewards</a>
@@ -77,44 +78,44 @@
   </header>
 
 
-<br>
-<br>
+  <br>
+  <br>
 
-<div class="container">
-  <div class="image-container">
-    <img src="images/register.jpg" alt="Register Image">
-  </div>
-  <div class="form-container">
-    <div class="card">
-      <h2 class="form-title">Create an Account</h2>
-      <br>
-      <form class="registration-form">
-        <div class="form-group">
-          <label for="username">Username:</label>
-          <input id="username" type="text" name="username" class="form-control" placeholder="Username" required>
-        </div>
-        <div class="form-group">
-          <label for="password">Password:</label>
-          <input id="password" type="password" name="password" class="form-control" placeholder="Password" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email address:</label>
-          <input id="email" type="email" name="email" class="form-control" placeholder="Email address" required>
-        </div>
-        <div class="form-group">
-          <label for="first">First name:</label>
-          <input id="first" type="text" name="first_name" class="form-control" placeholder="First name" required>
-        </div>
-        <div class="form-group">
-          <label for="last">Last name:</label>
-          <input id="last" type="text" name="last_name" class="form-control" placeholder="Last name" required>
-        </div>
+  <div class="container">
+    <div class="image-container">
+      <img src="images/register.jpg" alt="Register Image">
+    </div>
+    <div class="form-container">
+      <div class="card">
+        <h2 class="form-title">Create an Account</h2>
         <br>
-        <button type="submit" class="btn-submit" id="formsubmitbtn">Create Account</button>
-      </form>
+        <form class="registration-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input id="username" type="text" name="username" class="form-control" placeholder="Username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" class="form-control" placeholder="Password" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input id="email" type="email" name="email" class="form-control" placeholder="Email address" required>
+          </div>
+          <div class="form-group">
+            <label for="first">First name:</label>
+            <input id="first" type="text" name="first_name" class="form-control" placeholder="First name" required>
+          </div>
+          <div class="form-group">
+            <label for="last">Last name:</label>
+            <input id="last" type="text" name="last_name" class="form-control" placeholder="Last name" required>
+          </div>
+          <br>
+          <button type="submit" class="btn-submit" id="formsubmitbtn">Create Account</button>
+        </form>
+      </div>
     </div>
   </div>
-</div>
 </body>
 
 <footer class="bg-indigo-900 dark:bg-gray-900">
@@ -183,21 +184,23 @@
     </div>
   </div>
 </footer>
+
+
 <script>
-const dropdownToggle = document.getElementById('dropdown-toggle');
-const dropdownMenu = document.getElementById('dropdown-menu');
+  const dropdownToggle = document.getElementById('dropdown-toggle');
+  const dropdownMenu = document.getElementById('dropdown-menu');
 
-// Toggle the 'hidden' class on the dropdown menu when the button is clicked
-dropdownToggle.addEventListener('click', () => {
-dropdownMenu.classList.toggle('hidden');
-});
+  // Toggle the 'hidden' class on the dropdown menu when the button is clicked
+  dropdownToggle.addEventListener('click', () => {
+  dropdownMenu.classList.toggle('hidden');
+  });
 
-// Close the dropdown menu when clicking outside of it
-document.addEventListener('click', (event) => {
-if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
-dropdownMenu.classList.add('hidden');
-}
-});
+  // Close the dropdown menu when clicking outside of it
+  document.addEventListener('click', (event) => {
+  if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
+  dropdownMenu.classList.add('hidden');
+  }
+  });
 
 
 </script>
