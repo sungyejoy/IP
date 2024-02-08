@@ -177,8 +177,8 @@
         </div>
 
         <div class="self-center flex-1 text-center">
-            <button id="button" name="submit"type="submit" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48">Submit</button>
-        </div> 
+          <button id="button" name="submit" type="submit" class="bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48">Submit</button>
+      </div>
     </form>
 </div>
 </div>
@@ -267,13 +267,6 @@ if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.targe
 dropdownMenu.classList.add('hidden');
 }
 });
-
-    document.getElementById('button').addEventListener('click', function() {
-    alert('Purchase completed! Redirecting to home page.');
-    console.log('Redirecting to index.html...');
-    window.location.href = "index.html"; 
-    })
-
     document.addEventListener("DOMContentLoaded", function () { 
   const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
@@ -281,17 +274,19 @@ if (loggedInUser && loggedInUser.userLogged) {
   const userName = loggedInUser.username;
   const email = loggedInUser.email;
   const points = loggedInUser.points;
-  alert(`Welcome ${userName}, you are logged in`);
   console.log(userName);
   console.log(email);
   console.log(loggedInUser);
-  userID.innerHTML = ` ${userName}`;
-  emailID.innerHTML = `${email}`; 
-  pointsID.innerHTML = `${points}`;
 } else {
   const confirmLogout = confirm("You are not logged in. Login to purchase items");
   window.location.href = "login.html";
 }
+
+document.getElementById('button').addEventListener('click', function() {
+            alert('Purchase completed! Redirecting to home page.');
+            console.log('Redirecting to loading.html...');
+            window.location.href = "loading.html";
+        });
   })
 </script>
 
