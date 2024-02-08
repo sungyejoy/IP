@@ -120,18 +120,33 @@ header {
 	cursor: pointer;
 	border: none;
 	border-radius: 5px;
-	background-color: #007bff;
+	background-color: #3949AB;
 	color: #ffffff;
 	transition: background-color 0.3s ease;
 	float: right;
   }
+
+  .flex {
+	display: flex;
+	align-items: center; 
+  }
+
+
+  label{
+	color: #1A237E;
+  }
+
+  input[type="checkbox"] {
+	margin-right: 0.5rem; 
+	margin-bottom: 1.5rem;
+  }
   
   #formsubmitbtn:hover {
-	background-color: #0056b3;
+	background-color: #1A237E;
   }
 
   button#dropdown-toggle {
-	background-color: #3949AB; 
+	background-color: #1A237E; 
   }
 
   button#dropdown-toggle:hover {
