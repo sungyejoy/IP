@@ -2,6 +2,8 @@
 Sung Yeji | S10225093 | IM01 | Front-End Developer <br>
 Malcom Goh | S10262073 | IM01 | Back-End/API Developer<br>
 
+# Link to Deployment
+https://sungyejoy.github.io/IP
 
 # Integrated Studio Project - Bloop Bloop Studios
 
