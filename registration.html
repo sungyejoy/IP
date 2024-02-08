@@ -89,6 +89,7 @@
       <div class="card">
         <h2 class="form-title">Create an Account</h2>
         <br>
+
         <form class="registration-form">
           <div class="form-group">
             <label for="username">Username:</label>
@@ -103,12 +104,20 @@
             <input id="email" type="email" name="email" class="form-control" placeholder="Email address" required>
           </div>
           <div class="form-group">
-            <label for="first">First name:</label>
-            <input id="first" type="text" name="first_name" class="form-control" placeholder="First name" required>
+            <div class="flex">
+              <div class="flex-1 mr-2">
+                <label for="first">First name:</label>
+                <input id="first" type="text" name="first_name" class="form-control" placeholder="First name" required>
+              </div>
+              <div class="flex-1 ml-2">
+                <label for="last">Last name:</label>
+                <input id="last" type="text" name="last_name" class="form-control" placeholder="Last name" required>
+              </div>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="last">Last name:</label>
-            <input id="last" type="text" name="last_name" class="form-control" placeholder="Last name" required>
+          <div class="flex items-center justify-between">
+            <label for="saveInfo">By clicking 'Agree,' you acknowledge that you have read and agree to abide by the terms and conditions of this service:</label>
+            <input type="checkbox" id="saveInfo" name="saveInfo">
           </div>
           <br>
           <button type="submit" class="btn-submit" id="formsubmitbtn">Create Account</button>
@@ -116,7 +125,6 @@
       </div>
     </div>
   </div>
-</body>
 
 <footer class="bg-indigo-900 dark:bg-gray-900">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -184,7 +192,7 @@
     </div>
   </div>
 </footer>
-
+</body>
 
 <script>
   const dropdownToggle = document.getElementById('dropdown-toggle');
