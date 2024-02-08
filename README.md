@@ -1,7 +1,7 @@
 # OrigaME!
-Sung Yeji | S10225093<br>
-Malcom Goh | S10262073<br>
-IM01
+Sung Yeji | S10225093 | IM01 <br>
+Malcom Goh | S10262073 | IM01 <br>
+
 
 # Integrated Studio Project - Bloop Bloop Studios
 
