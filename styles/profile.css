@@ -496,24 +496,28 @@ form {
 	width: 25%;
 	margin-left: auto;
 	margin-right: auto;
+	filter: grayscale(100%);
   }
 
   .modal-container4 img{
 	width: 25%;
 	margin-left: auto;
 	margin-right: auto;
+	filter: grayscale(100%);
   }
 
   .modal-container5 img{
 	width: 25%;
 	margin-left: auto;
 	margin-right: auto;
+	filter: grayscale(100%);
   }
 
   .modal-container6 img{
 	width: 25%;
 	margin-left: auto;
 	margin-right: auto;
+	filter: grayscale(100%);
   }
 
   .badges {
