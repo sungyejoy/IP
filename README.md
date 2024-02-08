@@ -1,63 +1,93 @@
-# IP
+# IP | OrigaME@
 By: Yeji and Malcom
 
 # Integrated Studio Project - Bloop Bloop Studios
 
-One or two paragraphs providing an overview of your project. Tell us about your project.
+OrigaME! = Origami + game + ME! 
 
-Essentially, this part is your sales pitch.
+OrigaME is an application offering origami tutorials for children to follow and create, allowing them to accumulate points that can be exchanged for rewards. The goal is to enable children to delight in learning traditional activities. The initiative challenges the perception that introducing technology to children at a young age is detrimental. Instead, OrigaME aims to counter this stereotype by providing a safe and enjoyable way for children to engage with technology while learning and having fun. 
+
+OrigaME endeavours to serve as a platform where children can be accompanied and nurtured, guiding children to develop a variety of both soft and hard skills as they grow.
+
+Considering that children are at an age where exploring interests and engaging in hobbies is customary, acquiring new skills can profoundly influence them. Introducing a gamified approach to learning the step-by-step instructions of origami could effectively convey the idea that education and acquiring knowledge can be enjoyable and thrilling for them. 
 
 ## Design Process
 
-Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+So why Origami?
+From our research, we found out that Origami is beneficial for children for various reasons. Firstly, it helps kids develop their hand-eye coordination and fine motor skills as they meticulously fold and handle paper to create intricate drawings. Origami also helps kids develop cognitive skills like spatial reasoning, attention to detail, and problem-solving abilities since they must follow instructions step-by-step and see how a flat sheet can be transformed into a three-dimensional item. Additionally, youths can develop their artistic side and express themselves through paper folding with origami, which encourages creativity and imagination. Because it takes concentration and resolve to finish a challenging origami creation, this art form also instils patience and endurance. In conclusion, origami provides a fun and educational outlet for children to enhance both their physical and cognitive development. Hence, we decided to utilize Origami as our selling point.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+We decided to use purple/indigo as one of our main colors, as from research, we found out that those colours are perfect for children due to its captivating nature, purple is linked with wisdom and spirituality. It blends the stability of blue with the energy of red, adopting the qualities of either depending on the shade. This colour is beneficial for children as it not only captures their attention but also fosters a sense of imagination, creativity, and introspection. The balance of stability and energy in purple can contribute to a stimulating and thoughtful environment, promoting cognitive development and a positive emotional experience for young minds. 
 
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory) Include the Adobe XD wireframe as a folder. You can include the XD share url.
+Our website is mainly catered towards parents and children. As a parent, they would want a product that is convincing enough to let them trust their children to use the website, and hence we implemented phrases and messages in the website to comfort the parent, letting them know that our product is safe for their children to use.
+
+As a child using OrigaME!, they would want something exciting and amusing to capture their attention, hence, we gamified Origami by adding a point and reward system. Children can complete tutorials in OrigaME!, collect points, and exchange them into a wide variety of rewards.
 
 ## Features 
-### 1. Navigation Bar
-- NewJeans Logo button - Acts as a homepage and also adds the design identity of NewJeans
+### 1. Homepage
+- Introduction of OrigaME! to parents
+- Provides statistics of OrigaME!
 
-### 2. Homepage
-- 'Meet NewJeans' button - Directs users to the 'About' page when clicked upon
-- Music player - Allows users to play the audio player and listen to the newest releases of NewJean's songs
-- 'Shop NewJeans' button - Directs users to the 'Shop' page when clicked upon
-- 3D model of Binky Bong (NewJeans lightstick) - Enhances the look of the page
+### 2. About 
+- Introduces OrigaME!'s background, goals and visions
+- Introduces BloopBloop Studio's team members
+- Explains the credibility of BloopBloop Studio's products
 
-### 3. About 
-- Instagram button - Directs users to NewJean's instagram page
-- Profile of each members - Introduces each members to users
+### 3. Tutorials 
+- Includes a wide range of tutorials that users can look through
+- Includes two different ways of tutorial guides -- Step by Step Instructions and Video Tutorial
+- Includes a 3D Model button for users to view the model of the finished Origami
+- Prompts the user to upload a photo of their finished product to verify the authenticity
+- Prompts the user to submit a review
+- Rewards the user with points once they finish the tutorial
 
-### 4. Shop
-- Rows of Merchandises - Allows users to look at the gallery of merchandises and consider purchasing them
-- Hover function - When users are hovering over the images of the merchandises, the merchandise box will have an overlay of light pink, to allow users to clearly see what they are clicking on
+### 4. Shop > Product Information > Cart
+- 3 Categories of products -- Origami Paper, Tools, and Origami Books
+- Includes a diverse range of products
+- Product Information Page includes information and details of the product
+- A shopping cart function is included to enhance the user's experience
 
-### 5. Others
-- NewJeans cursor - Custom cursor to enhance the unique design style of NewJeans
-- Scroll to top - Scroll to top function as some pages are quite long, which enhances the convienience the users can face while using the website
+### 5. Contact Us
+- A form-like structure to enable users to type down their enquiries to contact the company
+- Frequently Asked Questions (FAQ) segment for users to browse through
+
+### 6. Profile
+1. Overview of user's statistics like followers, followings, and points
+2. Gallery of user's art
+3. Gallery of Badges that user has earnt
+
+### 7. Reward 
+- Includes a diverse range of rewards to exchange the points with
+- Includes a product information page for the users to browse the details of the product
+
+### Javascript 
+1. Dropdown buttons
+2. 
+
+### API 
+1. Dropdown buttons
+
 
 ### Features Left to Implement
-- Discography - To let users/fans view all the music NewJeans released, and to overview them
-- Schedule - To let fans view NewJean's future schedules like concerts, comebacks, merchandise drop, Etc.
+- Light & Dark mode - To let children use the app at night, to avoid straining their eyes. 
+- Text to Speech buttons - To aid children who do not know how to read yet, by listening to the speech generated.
+- Text Size Toggler - To let children or parents increase or decrease the size of the texts to let them have a better experience with the website.
 
 ## Technologies Used
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-    - The project uses **HTML** to lay out the website's contents like navigation, texts and image layouts
+    - The project uses **HTML** to lay out the website's contents like navigation, texts and image layouts.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-    - The project uses **CSS** to design and beautify the HTML elements
+    - The project uses **CSS** to design and beautify the HTML elements.
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-    - The project uses **Javascript** to add interactive elements in the website
+    - The project uses **Javascript** to add interactive elements in the website.
+- [Tailwind](https://tailwindui.com/)
+    - The project uses **Tailwind** to aid and build our code more efficiently.
+- [Bootstrap](https://getbootstrap.com/)
+    - The project uses **Bootstrap** to aid and build our code more efficiently.
 
 ## Content
-- [NewJeans Profile Description](https://www.hallyuidol.com/group/2hsjjlyMVCcgZ88Q2egX)
-    - All profile descriptions of each members were from Hallyuidol
+- [Origami Photos & Instructions](https://origami.guide/origami-animals/origami-birds/traditional-origami-crane/5#video)
+    - All instructions of origami is from Origami Guide.
 
 ## Media
-- [NewJeans Merchandise Images](https://weverseshop.io/en/shop/GL_USD/artists/82/categories/1134)
-    - All images of NewJeans merchandise are from Weverse
-- [Songs](https://www.youtube.com/@NewJeans_official)
-    - All songs are from this NewJeans Official Youtube Channel
-- [Images](https://www.pinterest.com/)
-    - All other images are from Pinterest
+- [Origami Photos & Instructions](https://origami.guide/origami-animals/origami-birds/traditional-origami-crane/5#video)
+    - All images of origami is from Origami Guide.
