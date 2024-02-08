@@ -52,6 +52,11 @@ header {
 	border-bottom: 1px solid black;
   }
 
+  .pointsneeded {
+	display: flex;
+	align-items: center; 
+  }
+
   .heading {
 	display: flex;
 	align-items: center;
