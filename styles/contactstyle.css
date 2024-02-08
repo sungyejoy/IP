@@ -1,0 +1,214 @@
+
+* {
+	box-sizing: border-box;
+}
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: Arial, sans-serif;
+	
+  }
+
+  #navbar {
+	padding: 5px;
+}
+
+#navtext {
+	margin-top: 5px;
+}
+  
+nav img {
+	height: 4rem;
+	padding: 10px; /* Add padding to the logo */
+}
+
+footer {
+	background-color: #ffffff;
+	padding: 1rem;
+	text-align: center;
+	margin-top: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+	background-color: #f0f0f0;
+  }
+
+header h1{
+    color: white;
+}
+
+header {
+	background-color: #ffffff;
+	padding: 0.5rem;
+	border-bottom: 1px solid black;
+  }
+
+  .tablethread {
+	display: none;
+  }
+  
+  .container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border: 1px black solid;
+	padding-left: 15rem;
+	padding-bottom: 15rem;
+  }
+  
+  .container h1 {
+	font-size: 5rem;
+  }
+  
+  .form {
+	font-size: 2rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+	border: none;
+	outline: none;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 16px;
+	padding: 12px;
+  }
+  
+  input[type="text"]:hover,
+  input[type="email"]:hover,
+  input[type="password"]:hover,
+  textarea:hover {
+	background-color: #e0e0e0;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  textarea:focus {
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #name,
+  #email,
+  #subj {
+	width: 100%;
+  }
+  
+  #msg {
+	width: 30rem;
+	height: 10rem;
+  }
+
+  a:hover {
+	background-color: #f0f0f0;
+  }
+  
+  
+  #formsubmitbtn {
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	background-color: #3949AB;
+	color: #ffffff;
+	transition: background-color 0.3s ease;
+	float: right;
+  }
+
+  .flex {
+	display: flex;
+	align-items: center; 
+  }
+
+
+  label{
+	color: #1A237E;
+  }
+
+  input[type="checkbox"] {
+	margin-right: 0.5rem; 
+	margin-bottom: 1.5rem;
+  }
+  
+  #formsubmitbtn:hover {
+	background-color: #1A237E;
+  }
+
+  button#dropdown-toggle {
+	background-color: #1A237E; 
+  }
+
+  button#dropdown-toggle:hover {
+	background-color: #1A237E; 
+  }
+  
+  .faq-container {
+	max-width: 600px;
+	margin: 0 auto;
+	margin-top: 5%;
+  }
+
+  .faq-container h1{
+	font-size: 3rem;
+	text-align: center;
+  }
+  
+  details {
+	margin-bottom: 20px;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #f0f0f0;
+  }
+  
+  summary {
+	padding: 10px;
+	cursor: pointer;
+	outline: none;
+	font-weight: bold;
+  }
+  
+  summary::-webkit-details-marker {
+	display: none;
+  }
+  
+  summary::after {
+	content: "+";
+	float: right;
+  }
+  
+  details[open] summary::after {
+	content: "-";
+  }
+  
+  p {
+	padding: 10px;
+	background-color: #fff;
+	border-top: none;
+	border-radius: 0 0 5px 5px;
+  }
+
+@media screen and (max-width: 768px) {
+	nav ul {
+		display: none;
+	}
+	
+	#hamburger-menu {
+		display: block;
+	}
+
+	.logotext {
+		flex-direction: column;
+	  }
+}
+

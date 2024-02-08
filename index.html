@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>OrigaMe!</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/1x/LogoHeart.png">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="javascript/signout.js"></script>
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+	<header>
+		<nav id="navbar" class="background-color: #F4F4ED;">
+			<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+			  <div class="relative flex h-16 items-center justify-between">
+				<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+
+				  <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-gray-700
+				   hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+					<span class="absolute -inset-0.5"></span>
+					<span class="sr-only">Open main menu</span>
+
+					<svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+					  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+					</svg>
+
+					<svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+					  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				  </button>
+				</div>
+				<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex flex-shrink-0 items-center">
+                        <a href="index.html">
+                            <img class="h-15 w-auto hover:bg-indigo-500" src="images/origame_logo.png" alt="origame">
+                        </a>
+                    </div>
+				  <div class="hidden sm:ml-6 sm:block">
+					<div class="flex space-x-4 mt-4">
+
+					  <a href="about.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">About</a>
+					  <a href="tutorial.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Tutorials</a>
+					  <a href="shop.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Shop</a>
+					  <a href="contact.html" class="text-gray-900 hover:bg-indigo-500 hover:text-white rounded-md px-3 py-2 text-xl font-medium">Contact Us</a>
+					</div>
+				  </div>
+				</div>
+				<div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+				  <!-- Profile dropdown -->
+				  <div class="relative ml-3">
+					<div>
+					  <button name="dropdown-toggle" id="dropdown-toggle" class="flex rounded-full bg-gray-800 text-sm focus:outline-none border-none">
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">Open user menu</span>
+              <img class="h-16 w-16 rounded-full object-cover" src="images/profile/profilepic.jpg" alt="Bobby Lee's Profile Pic'">
+            </button>
+            
+            <!-- Add the dropdown menu with a class to control its visibility -->
+            <div id="dropdown-menu" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5
+             focus:outline-none hidden" role="menu" aria-labelledby="dropdown-toggle" tabindex="-1">
+              <a href="profile.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Your Profile</a>
+              <a href="rewards.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Rewards</a>
+              <a href="login.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Login</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="user-menu-item-2" onclick="clearLocalStorage()">Sign out</a>
+            </div>
+
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  
+			</div>
+		  </nav>
+		  
+	</header>
+
+	<div class="relative overflow-hidden bg-white">
+		<div class="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+		  <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+			<div class="sm:max-w-lg">
+			  <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Want to explore the World of Origami?</h1>
+			  <p class="mt-4 text-xl text-gray-500">OrigaME! is a friend that accompanies<br> your children how to fold origami.</p>
+			</div>
+			<div>
+			  <div class="mt-10">
+				<!-- Decorative image grid -->
+				<div aria-hidden="true" class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+				  <div class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+					<div class="flex items-center space-x-6 lg:space-x-8">
+					  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+						<div class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+						  <img src="images/origami/bluebellflower.jpg" alt="Bluebell Flower Origami" class="h-full w-full object-cover object-center">
+						</div>
+						<div class="h-64 w-44 overflow-hidden rounded-lg">
+						  <img src="images/origami/cat.jpg" alt="Cat Origami" class="h-full w-full object-cover object-center">
+						</div>
+					  </div>
+					  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+						<div class="h-64 w-44 overflow-hidden rounded-lg">
+						  <img src="images/origami/frog.jpg" alt="Frog Origami" class="h-full w-full object-cover object-center">
+						</div>
+						<div class="h-64 w-44 overflow-hidden rounded-lg">
+						  <img src="images/origami/ladybug.jpg" alt="Ladybug Origami" class="h-full w-full object-cover object-center">
+						</div>
+						<div class="h-64 w-44 overflow-hidden rounded-lg">
+						  <img src="images/origami/lotus.jpg" alt="Lotus Origami" class="h-full w-full object-cover object-center">
+						</div>
+					  </div>
+					  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+						<div class="h-64 w-44 overflow-hidden rounded-lg">
+						  <img src="images/origami/tulip.jpg" alt="Tulip Origami" class="h-full w-full object-cover object-center">
+						</div>
+						<div class="h-64 w-44 overflow-hidden rounded-lg">
+						  <img src="images/origami/star.jpg" alt="Star Origami" class="h-full w-full object-cover object-center">
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+				<a href="tutorial.html" class="inline-block rounded-md border border-transparent bg-indigo-500 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700">Explore Tutorials</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="overflow-hidden bg-white py-24 sm:py-32">
+		<div class="mx-auto max-w-7xl px-6 lg:px-8">
+		  <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+			<div class="lg:pr-8 lg:pt-4">
+			  <div class="lg:max-w-lg">
+				<h2 class="text-base font-semibold leading-7 text-indigo-600">Your Helping Hand</h2>
+				<p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Let OrigaME! accompany your child in Creative Learning</p>
+				<p class="mt-6 text-lg leading-8 text-gray-600">Why OrigaME?</p>
+				<dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+				  <div class="relative pl-9">
+					<dt class="inline font-semibold text-gray-900">
+					  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute left-1 top-1 text-indigo-600 w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+					  </svg>
+					  Endless Flow of Creativity
+					</dt>
+					<dd class="inline"><br>Develop your child's artistic side to encourage their creativity and imagination, let them express themselves through paper folding with Origami.
+						</dd>
+				  </div>
+				  <div class="relative pl-9">
+					<dt class="inline font-semibold text-gray-900">
+					  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute left-1 top-1 text-indigo-600 w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 
+						.414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+					  </svg>					  
+					  Self Directed Learning
+					</dt>
+					<dd class="inline"><br>The implementation of simple yet straightforward elements, as well as
+						OrigaME's mascot, Kokoro, will guide your child through their journey in OrigamME!</dd>
+				  </div>
+				  <div class="relative pl-9">
+					<dt class="inline font-semibold text-gray-900">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute left-1 top-1 text-indigo-600 w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
+							<path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
+						  </svg>						  
+					  Fun Education
+					</dt>
+					<dd class="inline"><br>Fun and educational outlet for children to enhance both their physical and cognitive development.</dd>
+				  </div>
+				</dl>
+			  </div>
+			</div>
+			<img src="images/mascot/kokoro.png" alt="Kokoro" class="w-[48rem] max-w-none rounded-xl sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442">
+		  </div>
+		</div>
+	  </div>
+	  
+
+	<!-- Collect Badges & Exchange to Rewards -->
+	<div class="md:container md:mx-auto">
+		<div class="text-center pt-28">
+			<h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Collect Badges & <br> Exchange them into Rewards!</h1>
+			<div class="w-50 py-10">
+				<img class="inline-flex items-center justify-center w-40 h-40" src="images/badge_icon/icon1.png" alt="Badge Icon 1">
+				<img class="inline-flex items-center justify-center w-40 h-40" src="images/badge_icon/icon2.png" alt="Badge Icon 2">
+				<img class="inline-flex items-center justify-center w-40 h-40" src="images/badge_icon/icon3.png" alt="Badge Icon 3">
+			</div>
+		</div>
+	</div>
+
+	<!-- Statistics -->
+	<div class="bg-white py-24 sm:py-32">
+		<div class="mx-auto max-w-7xl px-6 lg:px-8">
+		  <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+			<div class="mx-auto flex max-w-xs flex-col gap-y-4">
+			  <dt class="text-base leading-7 text-gray-600">Rewards to pick</dt>
+			  <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">More than 100</dd>
+			</div>
+			<div class="mx-auto flex max-w-xs flex-col gap-y-4">
+			  <dt class="text-base leading-7 text-gray-600">Origami Tutorials</dt>
+			  <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Over 200</dd>
+			</div>
+			<div class="mx-auto flex max-w-xs flex-col gap-y-4">
+			  <dt class="text-base leading-7 text-gray-600">Users globally!</dt>
+			  <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">5,000+</dd>
+			</div>
+		  	</dl>
+		</div>
+	</div>
+
+	<div class="md:container md:mx-auto">
+		<div class="text-center pt-28 pb-28">
+
+			<h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Ready to fold paper into art?</h1>
+			
+			<p class="mt-6 text-lg leading-8 text-gray-600">Unleash your magic with OrigaME!</p>
+			
+			<div class="mt-10 flex items-center justify-center gap-x-6 py-10">
+				<a href="tutorial.html" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 focus-visible:outline
+				focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Look at tutorials</a>
+				<a href="about.html" class="text-sm font-semibold leading-6 text-gray-900">About OrigaME! <span aria-hidden="true">→</span></a>
+			</div>
+
+		</div>
+	</div>
+	  
+
+</body>
+	
+<!-- Footer -->
+<footer class="bg-indigo-900 dark:bg-gray-900">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="about.html" class="flex items-center">
+                  <img src="images/bloopbloopstudio_logo.png" class="h-8 me-3" alt="BloopBloop Studios Logo">
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap text-indigo-50">BloopBloop Studios</span>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-indigo-50">About</h2>
+                  <ul class="text-gray-300 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="about.html" class="hover:underline">About Us</a>
+                      </li>
+                      <li>
+                          <a href="contact.html" class="hover:underline">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-indigo-50">Install OrigaME!</h2>
+                  <ul class="text-gray-300 dark:text-gray-30 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline ">Apple Store</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">GooglePlay Store</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-indigo-50">Legal</h2>
+                  <ul class="text-gray-300 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-300 sm:text-center dark:text-gray-400">© 2023 <a href="about.html" class="hover:underline">BloopBloop Studios™</a>. All Rights Reserved.
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a href="#" class="text-gray-300 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                    </svg>
+                  <span class="sr-only">Facebook page</span>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Twitter page</span>
+              </a>
+          </div>
+      </div>
+    </div>
+</footer>
+
+<script>
+	const dropdownToggle = document.getElementById('dropdown-toggle');
+	const dropdownMenu = document.getElementById('dropdown-menu');
+
+	// Toggle the 'hidden' class on the dropdown menu when the button is clicked
+	dropdownToggle.addEventListener('click', () => {
+	dropdownMenu.classList.toggle('hidden');
+	});
+
+	// Close the dropdown menu when clicking outside of it
+	document.addEventListener('click', (event) => {
+	if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
+	dropdownMenu.classList.add('hidden');
+	}
+	});
+
+	const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+	if (loggedInUser && loggedInUser.userLogged) {
+		const userName= loggedInUser.username;
+		const userPassword = loggedInUser.password; 
+
+		alert(`Welcome ${userName}, you are logged in`);
+
+	} else {
+		const confirmLogout = confirm("You are not logged in. Do you want to go to the login page?");
+		if (confirmLogout) {
+			window.location.href = "login.html";
+}
+	}
+
+</script>
+
+</html>
+

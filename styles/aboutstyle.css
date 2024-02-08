@@ -1,0 +1,364 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	cursor: url("images/1x/cursor.png"), auto;
+  }
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: Arial, sans-serif;
+	
+  }
+
+  #navbar {
+	padding: 5px;
+}
+
+#navtext {
+	margin-top: 5px;
+}
+  
+nav img {
+	height: 4rem;
+	padding: 10px; /* Add padding to the logo */
+}
+
+footer {
+	background-color: #ffffff;
+	padding: 1rem;
+	text-align: center;
+	margin-top: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+	background-color: #f0f0f0;
+  }
+
+header h1{
+    color: white;
+}
+
+header {
+	background-color: #ffffff;
+	padding: 0.5rem;
+	border-bottom: 1px solid black;
+  }
+
+
+  .aboutus h1 {
+    color: #6e657e;
+    font-size: 4rem;
+    text-align: center;
+  }
+ 
+ 
+   /* Person specified content box*/
+   .aboutorigame {
+  display: flex;
+  /* border: #ddd 1px solid; */
+  margin-left: 5%;
+  margin-right: 5%;
+   }
+   
+   .origame {
+  margin: 2%;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+   }
+   
+   .logotext {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+   }
+
+   .text {
+    width: 40%;
+   }
+
+   .text img{
+    width: 30%;
+   }
+ 
+   
+   .text p{
+  font-size: 1rem;
+  color: #000000;
+  text-align: left;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+   }
+ 
+   .aboutgoals {
+     display: flex;
+     /* border: #ddd 1px solid; */
+     margin-left: 5%;
+     margin-right: 5%;
+    justify-content: right;
+     
+   }
+  
+   .goalsimg img{
+     margin-left: 2%;
+     width: 25rem;
+     flex-direction: column;
+     display: flex;
+     border-radius: 10%;
+   }
+   
+   .goals {
+     font-size: 1rem;
+     color: #000000;
+     margin-left: 1rem;
+     margin-right: 1rem;
+     text-align: right;
+     width: 40%;
+   }
+ 
+   .goals h2{
+     font-size: 2rem;
+     color: #6e657e;;
+   }
+ 
+   .goals p{
+     padding-right: 2rem;
+   }
+   
+   .aboutvision {
+     display: flex;
+     /* border: #ddd 1px solid; */
+     margin-left: 5%;
+     margin-right: 5%;
+    justify-content: left;
+     
+   }
+  
+   .visionimg img{
+     margin-right: 2%;
+     width: 25rem;
+     flex-direction: column;
+     display: flex;
+     border-radius: 10%;
+   }
+ 
+   .vision h2{
+    font-size: 2rem;
+    color: #6e657e;
+   }
+   
+   .vision {
+     font-size: 1rem;
+     color: #000000;
+     margin-left: 1rem;
+     margin-right: 1rem;
+     text-align: left;
+     width: 40%;
+   }
+ 
+   .vision p{
+     padding-left: 2rem;
+   }
+ 
+   .team{
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     padding: 2%;
+     width: 100%;
+   }
+ 
+   .team h1{
+     justify-content: center;
+     font-size: 3rem;
+     text-align: center;
+     color: #383146;
+     margin: auto;
+   }
+   button#dropdown-toggle {
+    background-color: #3949AB; 
+    }
+  
+    button#dropdown-toggle:hover {
+    background-color: #1A237E; 
+    }
+
+   .aboutmalc {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: right;
+    text-align: right;
+    padding-top: 2rem;
+    border: #ddd 1px solid;
+  }
+ 
+  .malcimg{
+    margin: 2%;
+    width: 10rem;
+    height: 10rem; 
+    border-radius: 50%;
+    overflow: hidden; 
+    
+  }
+  
+
+.yejiimg{
+  margin: 2%;
+  width: 10rem;
+  height: 10rem; 
+  border-radius: 50%;
+  overflow: hidden; 
+  
+}
+
+.malcimg img, .yejiimg img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+} 
+
+.malcom p{
+  margin-left: 50%;
+  font-size: 1rem;
+}
+
+.yeji p{
+  margin-right: 50%;
+  font-size: 1rem;
+}
+
+  .malcom h2{
+    font-size: 2rem;
+    color: #6e657e;
+  }
+  
+  .malcom h3{
+    font-size: 1.5rem;
+    color: #6e657e;
+  }
+
+  .aboutyeji {
+    display: flex;
+    border: #ddd 1px solid;
+    margin-left: 5%;
+    margin-right: 5%;
+   justify-content: left;
+   padding-top: 2rem;
+  }
+
+  .yeji h2{
+    font-size: 2rem;
+    color: #6e657e;
+  }
+
+  .yeji h3{
+    font-size: 1.5rem;
+    color: #6e657e;
+  }
+
+  .complogo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+
+ 
+ 
+ @media screen and (max-width: 768px) {
+  .aboutorigame, .aboutgoals, .aboutvision, .team, .aboutmalc, .aboutyeji {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .text img {
+    width: 100%;
+  }
+
+  .goalsimg img, .visionimg img {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .goals, .vision {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .malcimg, .yejiimg {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+  }
+
+  .malcom p, .yeji p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+    .aboutus h1 {
+      font-size: 2rem;
+    }
+  
+    .aboutorigame,
+    .aboutgoals,
+    .aboutvision,
+    .team,
+    .aboutmalc,
+    .aboutyeji {
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .origame,
+    .logotext,
+    .text,
+    .goalsimg,
+    .goals,
+    .visionimg,
+    .vision,
+    .team h1,
+    .malcimg,
+    .malcom,
+    .yejiimg,
+    .yeji {
+      margin: 1rem 0;
+    }
+  
+    .aboutgoals {
+      justify-content: center;
+    }
+  
+    .goals h2,
+    .vision h2,
+    .malcom h2,
+    .yeji h2 {
+      font-size: 2rem;
+    }
+  
+    .goals p,
+    .vision p,
+    .malcom h3,
+    .yeji h3 {
+      padding: 0;
+    }
+  
+    .malcom,
+    .yeji {
+      text-align: center;
+    }
+  }
+ 
