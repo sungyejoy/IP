@@ -103,9 +103,9 @@ As a child using OrigaME!, they would want something exciting and amusing to cap
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
     - The project uses **Javascript** to add interactive elements in the website.
 - [Tailwind](https://tailwindui.com/)
-    - The project uses **Tailwind** to aid and build our code more efficiently.
+    - The project uses **Tailwind** to aid and build our code more efficiently, we utilized their free codes of their components into our website.
 - [Bootstrap](https://getbootstrap.com/)
-    - The project uses **Bootstrap** to aid and build our code more efficiently.
+    - The project uses **Bootstrap** to aid and build our code more efficiently, we utilized their free codes of their components into our website.
 
 ## Content
 - [Origami Photos & Instructions](https://origami.guide/origami-animals/origami-birds/traditional-origami-crane/5#video)
