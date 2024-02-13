@@ -2,6 +2,8 @@
 Sung Yeji | S10225093 | IM01 | Front-End Developer <br>
 Malcom Goh | S10262073 | IM01 | Back-End/API Developer<br>
 
+# Link to Deployment
+https://sungyejoy.github.io/IP
 
 # Integrated Studio Project - Bloop Bloop Studios
 
@@ -12,9 +14,6 @@ OrigaME is an application offering origami tutorials for children to follow and 
 OrigaME endeavours to serve as a platform where children can be accompanied and nurtured, guiding children to develop a variety of both soft and hard skills as they grow.
 
 Considering that children are at an age where exploring interests and engaging in hobbies is customary, acquiring new skills can profoundly influence them. Introducing a gamified approach to learning the step-by-step instructions of origami could effectively convey the idea that education and acquiring knowledge can be enjoyable and thrilling for them. 
-
-# Link to Deployment
-https://sungyejoy.github.io/IP
 
 ## Design Process
 
