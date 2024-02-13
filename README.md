@@ -13,6 +13,9 @@ OrigaME endeavours to serve as a platform where children can be accompanied and 
 
 Considering that children are at an age where exploring interests and engaging in hobbies is customary, acquiring new skills can profoundly influence them. Introducing a gamified approach to learning the step-by-step instructions of origami could effectively convey the idea that education and acquiring knowledge can be enjoyable and thrilling for them. 
 
+# Link to Deployment
+https://sungyejoy.github.io/IP
+
 ## Design Process
 
 So why Origami?
